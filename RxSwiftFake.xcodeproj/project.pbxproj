@@ -14,6 +14,13 @@
 		3161DF4E21CB59DD00185693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3161DF4C21CB59DD00185693 /* LaunchScreen.storyboard */; };
 		3161DF5921CB59DD00185693 /* RxSwiftFakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DF5821CB59DD00185693 /* RxSwiftFakeTests.swift */; };
 		3161DF6421CB59DD00185693 /* RxSwiftFakeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DF6321CB59DD00185693 /* RxSwiftFakeUITests.swift */; };
+		3161DF8D21CB816200185693 /* Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DF8C21CB816200185693 /* Rx.swift */; };
+		3161DF9121CB853300185693 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DF9021CB853300185693 /* Disposable.swift */; };
+		3161DF9321CB856100185693 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DF9221CB856100185693 /* Event.swift */; };
+		3161DF9521CB859A00185693 /* ObservableConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DF9421CB859A00185693 /* ObservableConvertibleType.swift */; };
+		3161DF9721CB85BB00185693 /* ObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DF9621CB85BB00185693 /* ObservableType.swift */; };
+		3161DF9921CB85D000185693 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DF9821CB85D000185693 /* Observable.swift */; };
+		3161DF9B21CB864400185693 /* ObserverType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DF9A21CB864400185693 /* ObserverType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		3161DF5F21CB59DD00185693 /* RxSwiftFakeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftFakeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3161DF6321CB59DD00185693 /* RxSwiftFakeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftFakeUITests.swift; sourceTree = "<group>"; };
 		3161DF6521CB59DD00185693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3161DF8C21CB816200185693 /* Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rx.swift; sourceTree = "<group>"; };
+		3161DF9021CB853300185693 /* Disposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
+		3161DF9221CB856100185693 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		3161DF9421CB859A00185693 /* ObservableConvertibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableConvertibleType.swift; sourceTree = "<group>"; };
+		3161DF9621CB85BB00185693 /* ObservableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableType.swift; sourceTree = "<group>"; };
+		3161DF9821CB85D000185693 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		3161DF9A21CB864400185693 /* ObserverType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,7 @@
 		3161DF3721CB59DC00185693 = {
 			isa = PBXGroup;
 			children = (
+				3161DF7121CB59EE00185693 /* RxSwift */,
 				3161DF4221CB59DC00185693 /* RxSwiftFake */,
 				3161DF5721CB59DD00185693 /* RxSwiftFakeTests */,
 				3161DF6221CB59DD00185693 /* RxSwiftFakeUITests */,
@@ -123,6 +138,20 @@
 				3161DF6521CB59DD00185693 /* Info.plist */,
 			);
 			path = RxSwiftFakeUITests;
+			sourceTree = "<group>";
+		};
+		3161DF7121CB59EE00185693 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				3161DF9021CB853300185693 /* Disposable.swift */,
+				3161DF9221CB856100185693 /* Event.swift */,
+				3161DF9821CB85D000185693 /* Observable.swift */,
+				3161DF9421CB859A00185693 /* ObservableConvertibleType.swift */,
+				3161DF9621CB85BB00185693 /* ObservableType.swift */,
+				3161DF9A21CB864400185693 /* ObserverType.swift */,
+				3161DF8C21CB816200185693 /* Rx.swift */,
+			);
+			path = RxSwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +285,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3161DF9B21CB864400185693 /* ObserverType.swift in Sources */,
+				3161DF9921CB85D000185693 /* Observable.swift in Sources */,
+				3161DF9521CB859A00185693 /* ObservableConvertibleType.swift in Sources */,
+				3161DF9721CB85BB00185693 /* ObservableType.swift in Sources */,
+				3161DF8D21CB816200185693 /* Rx.swift in Sources */,
+				3161DF9121CB853300185693 /* Disposable.swift in Sources */,
 				3161DF4621CB59DC00185693 /* ViewController.swift in Sources */,
 				3161DF4421CB59DC00185693 /* AppDelegate.swift in Sources */,
+				3161DF9321CB856100185693 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
