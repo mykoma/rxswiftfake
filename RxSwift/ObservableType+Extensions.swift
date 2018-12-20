@@ -10,6 +10,13 @@ import Foundation
 
 extension ObservableType {
     
+    func subscribe(_ on: @escaping (Event<E>) -> Void) -> Disposable {
+        let observer = AnonymousObserver.init { (event) in
+            on(event)
+        }
+        return self.asObservable().subscribe(observer)
+    }
+    
     func subscribe(onNext: ((E) -> Void)? = nil,
                    onError: ((Swift.Error) -> Void)? = nil,
                    onCompleted: (() -> Void)? = nil,
