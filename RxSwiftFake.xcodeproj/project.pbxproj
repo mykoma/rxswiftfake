@@ -31,6 +31,7 @@
 		3161DFAE21CBAC0F00185693 /* Disposables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DFAD21CBAC0F00185693 /* Disposables.swift */; };
 		3161DFB021CBAE9C00185693 /* NopDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DFAF21CBAE9C00185693 /* NopDisposable.swift */; };
 		3161DFB321CBCCAE00185693 /* BinaryDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DFB221CBCCAE00185693 /* BinaryDisposable.swift */; };
+		31D8C53121CCF0570078BC66 /* AtomicInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53021CCF0570078BC66 /* AtomicInt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,9 @@
 		3161DFAD21CBAC0F00185693 /* Disposables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposables.swift; sourceTree = "<group>"; };
 		3161DFAF21CBAE9C00185693 /* NopDisposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NopDisposable.swift; sourceTree = "<group>"; };
 		3161DFB221CBCCAE00185693 /* BinaryDisposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryDisposable.swift; sourceTree = "<group>"; };
+		31D8C53021CCF0570078BC66 /* AtomicInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicInt.swift; sourceTree = "<group>"; };
+		31D8C53221CCF0800078BC66 /* RxAtomic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxAtomic.h; sourceTree = "<group>"; };
+		31D8C53321CCF35A0078BC66 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,7 @@
 				3161DF4A21CB59DD00185693 /* Assets.xcassets */,
 				3161DF4C21CB59DD00185693 /* LaunchScreen.storyboard */,
 				3161DF4F21CB59DD00185693 /* Info.plist */,
+				31D8C53321CCF35A0078BC66 /* BridgingHeader.h */,
 			);
 			path = RxSwiftFake;
 			sourceTree = "<group>";
@@ -163,8 +168,9 @@
 		3161DF7121CB59EE00185693 /* RxSwift */ = {
 			isa = PBXGroup;
 			children = (
-				3161DFB121CBCBF600185693 /* Disposables */,
+				31D8C53221CCF0800078BC66 /* RxAtomic.h */,
 				3161DFA521CBA89200185693 /* AnonymousObserver.swift */,
+				31D8C53021CCF0570078BC66 /* AtomicInt.swift */,
 				3161DF9221CB856100185693 /* Event.swift */,
 				3161DF9821CB85D000185693 /* Observable.swift */,
 				3161DF9421CB859A00185693 /* ObservableConvertibleType.swift */,
@@ -174,6 +180,7 @@
 				3161DF9A21CB864400185693 /* ObserverType.swift */,
 				3161DFA021CB8DE400185693 /* Platform.Darwin.swift */,
 				3161DF8C21CB816200185693 /* Rx.swift */,
+				3161DFB121CBCBF600185693 /* Disposables */,
 			);
 			path = RxSwift;
 			sourceTree = "<group>";
@@ -342,6 +349,7 @@
 				3161DFAE21CBAC0F00185693 /* Disposables.swift in Sources */,
 				3161DF4421CB59DC00185693 /* AppDelegate.swift in Sources */,
 				3161DF9321CB856100185693 /* Event.swift in Sources */,
+				31D8C53121CCF0570078BC66 /* AtomicInt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +533,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goluk.RxSwiftFake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/RxSwiftFake/BridgingHeader.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -543,6 +552,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goluk.RxSwiftFake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/RxSwiftFake/BridgingHeader.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

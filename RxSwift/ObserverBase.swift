@@ -14,16 +14,16 @@ class ObserverBase<ElementType>: Disposable, ObserverType {
     typealias E = ElementType
     
     // 标记observer是否已经停止
-    private var _isStopped: AtomicInt = 0
+    private var _isStopped = AtomicInt(0)
     
     func on(_ event: Event<E>) {
         switch event {
         case .next:
-            if _isStopped == 0  {
+            if _isStopped.load() == 0  {
                 onCore(event)
             }
         case .error, .completed:
-            if AtomicCompareAndSwap(0, 1, &_isStopped) {
+            if _isStopped.fetchOr(1) == 0 {
                 onCore(event)
             }
         }
@@ -43,7 +43,10 @@ class ObserverBase<ElementType>: Disposable, ObserverType {
          This function compares the value in __oldValue to the value in the memory location referenced by __theValue.
          If the values match, this function stores the value from __newValue into that memory location atomically.
          */
-        _ = AtomicCompareAndSwap(0, 1, &_isStopped)
+//        Old code
+//        _ = AtomicCompareAndSwap(0, 1, &_isStopped)
+        
+        _isStopped.fetchOr(1)
     }
     
 }

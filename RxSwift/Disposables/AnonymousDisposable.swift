@@ -12,7 +12,7 @@ fileprivate final class AnonymousDisposable: DisposeBase, Cancelable {
     
     public typealias DisposeActiion = () -> Void
     
-    private var _isDisposed: AtomicInt = 0
+    private var _isDisposed = AtomicInt(0)
     private var _disposeAction: DisposeActiion
     
     fileprivate init(_ disposeAction: @escaping DisposeActiion) {
@@ -21,7 +21,7 @@ fileprivate final class AnonymousDisposable: DisposeBase, Cancelable {
     }
     
     var isDisposed: Bool {
-        return _isDisposed == 1
+        return _isDisposed.isFlagSet(1)
     }
     
     func dispose() {

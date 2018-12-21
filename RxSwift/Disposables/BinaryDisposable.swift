@@ -10,13 +10,13 @@ import Foundation
 
 fileprivate final class BinaryDisposable: DisposeBase, Cancelable {
     
-    private var _isDisposed: AtomicInt = 0
+    private var _isDisposed = AtomicInt(0)
     
     private var _disposable1: Disposable?
     private var _disposable2: Disposable?
     
     var isDisposed: Bool {
-        return _isDisposed == 1
+        return _isDisposed.isFlagSet(1)
     }
     
     init(_ disposable1: Disposable, _ disposable2: Disposable) {
@@ -26,7 +26,7 @@ fileprivate final class BinaryDisposable: DisposeBase, Cancelable {
     }
     
     func dispose() {
-        if AtomicCompareAndSwap(0, 1, &_isDisposed) {
+        if _isDisposed.fetchOr(1) == 0 {
             _disposable1?.dispose()
             _disposable2?.dispose()
             _disposable1 = nil

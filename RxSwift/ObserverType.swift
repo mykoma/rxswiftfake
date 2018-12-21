@@ -15,3 +15,19 @@ public protocol ObserverType {
     func on(_ event: Event<E>)
     
 }
+
+extension ObserverType {
+    
+    func onNext(_ element: E)  {
+        on(.next(element))
+    }
+    
+    func onError(_ error: Error) {
+        on(.error(error))
+    }
+    
+    func onCompleted() {
+        on(.completed)
+    }
+    
+}
