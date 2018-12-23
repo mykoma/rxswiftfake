@@ -36,6 +36,11 @@
 		31D8C53F21CD199C0078BC66 /* Bag+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53921CD199C0078BC66 /* Bag+Rx.swift */; };
 		31D8C54021CD199C0078BC66 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53A21CD199C0078BC66 /* Bag.swift */; };
 		31D8C54821CD26D00078BC66 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C54721CD26D00078BC66 /* Errors.swift */; };
+		31D8C54B21CF38760078BC66 /* SubjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C54921CF38750078BC66 /* SubjectType.swift */; };
+		31D8C54C21CF38760078BC66 /* BehaviorSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C54A21CF38750078BC66 /* BehaviorSubject.swift */; };
+		31D8C54E21CF387C0078BC66 /* SynchronizedUnsubscribeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C54D21CF387C0078BC66 /* SynchronizedUnsubscribeType.swift */; };
+		31D8C55021CF38840078BC66 /* AnyObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C54F21CF38840078BC66 /* AnyObserver.swift */; };
+		31D8C55221CF38910078BC66 /* SubscriptionDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C55121CF38910078BC66 /* SubscriptionDisposable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +98,11 @@
 		31D8C53921CD199C0078BC66 /* Bag+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bag+Rx.swift"; sourceTree = "<group>"; };
 		31D8C53A21CD199C0078BC66 /* Bag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
 		31D8C54721CD26D00078BC66 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		31D8C54921CF38750078BC66 /* SubjectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectType.swift; sourceTree = "<group>"; };
+		31D8C54A21CF38750078BC66 /* BehaviorSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviorSubject.swift; sourceTree = "<group>"; };
+		31D8C54D21CF387C0078BC66 /* SynchronizedUnsubscribeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedUnsubscribeType.swift; sourceTree = "<group>"; };
+		31D8C54F21CF38840078BC66 /* AnyObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyObserver.swift; sourceTree = "<group>"; };
+		31D8C55121CF38910078BC66 /* SubscriptionDisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionDisposable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +188,7 @@
 			children = (
 				31D8C53221CCF0800078BC66 /* RxAtomic.h */,
 				3161DFA521CBA89200185693 /* AnonymousObserver.swift */,
+				31D8C54F21CF38840078BC66 /* AnyObserver.swift */,
 				31D8C53021CCF0570078BC66 /* AtomicInt.swift */,
 				31D8C54721CD26D00078BC66 /* Errors.swift */,
 				3161DF9221CB856100185693 /* Event.swift */,
@@ -208,6 +219,7 @@
 				3161DFAD21CBAC0F00185693 /* Disposables.swift */,
 				3161DFA921CBAB5E00185693 /* DisposeBase.swift */,
 				3161DFAF21CBAE9C00185693 /* NopDisposable.swift */,
+				31D8C55121CF38910078BC66 /* SubscriptionDisposable.swift */,
 			);
 			path = Disposables;
 			sourceTree = "<group>";
@@ -215,6 +227,8 @@
 		31D8C53521CD199C0078BC66 /* Subject */ = {
 			isa = PBXGroup;
 			children = (
+				31D8C54A21CF38750078BC66 /* BehaviorSubject.swift */,
+				31D8C54921CF38750078BC66 /* SubjectType.swift */,
 			);
 			path = Subject;
 			sourceTree = "<group>";
@@ -222,8 +236,8 @@
 		31D8C53821CD199C0078BC66 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
-				31D8C53921CD199C0078BC66 /* Bag+Rx.swift */,
 				31D8C53A21CD199C0078BC66 /* Bag.swift */,
+				31D8C53921CD199C0078BC66 /* Bag+Rx.swift */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -231,6 +245,7 @@
 		31D8C54421CD239E0078BC66 /* Concurrency */ = {
 			isa = PBXGroup;
 			children = (
+				31D8C54D21CF387C0078BC66 /* SynchronizedUnsubscribeType.swift */,
 			);
 			path = Concurrency;
 			sourceTree = "<group>";
@@ -366,18 +381,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31D8C55221CF38910078BC66 /* SubscriptionDisposable.swift in Sources */,
 				3161DF9B21CB864400185693 /* ObserverType.swift in Sources */,
 				3161DFA821CBAB1000185693 /* AnonymousDisposable.swift in Sources */,
 				31D8C54821CD26D00078BC66 /* Errors.swift in Sources */,
 				3161DFA621CBA89200185693 /* AnonymousObserver.swift in Sources */,
+				31D8C55021CF38840078BC66 /* AnyObserver.swift in Sources */,
 				3161DF9921CB85D000185693 /* Observable.swift in Sources */,
 				3161DF9D21CB8AC500185693 /* ObservableType+Extensions.swift in Sources */,
 				31D8C54021CD199C0078BC66 /* Bag.swift in Sources */,
 				3161DFAC21CBAB8600185693 /* Cancelable.swift in Sources */,
 				3161DF9521CB859A00185693 /* ObservableConvertibleType.swift in Sources */,
+				31D8C54E21CF387C0078BC66 /* SynchronizedUnsubscribeType.swift in Sources */,
 				3161DF9721CB85BB00185693 /* ObservableType.swift in Sources */,
 				3161DF8D21CB816200185693 /* Rx.swift in Sources */,
 				3161DFAA21CBAB5E00185693 /* DisposeBase.swift in Sources */,
+				31D8C54C21CF38760078BC66 /* BehaviorSubject.swift in Sources */,
 				3161DF9121CB853300185693 /* Disposable.swift in Sources */,
 				3161DF4621CB59DC00185693 /* ViewController.swift in Sources */,
 				31D8C53F21CD199C0078BC66 /* Bag+Rx.swift in Sources */,
@@ -387,6 +406,7 @@
 				3161DF9F21CB8D0400185693 /* ObserverBase.swift in Sources */,
 				3161DFAE21CBAC0F00185693 /* Disposables.swift in Sources */,
 				3161DF4421CB59DC00185693 /* AppDelegate.swift in Sources */,
+				31D8C54B21CF38760078BC66 /* SubjectType.swift in Sources */,
 				3161DF9321CB856100185693 /* Event.swift in Sources */,
 				31D8C53121CCF0570078BC66 /* AtomicInt.swift in Sources */,
 				31D8C53C21CD199C0078BC66 /* RecursiveLock.swift in Sources */,
