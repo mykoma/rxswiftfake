@@ -32,6 +32,10 @@
 		3161DFB021CBAE9C00185693 /* NopDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DFAF21CBAE9C00185693 /* NopDisposable.swift */; };
 		3161DFB321CBCCAE00185693 /* BinaryDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DFB221CBCCAE00185693 /* BinaryDisposable.swift */; };
 		31D8C53121CCF0570078BC66 /* AtomicInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53021CCF0570078BC66 /* AtomicInt.swift */; };
+		31D8C53C21CD199C0078BC66 /* RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53421CD199C0078BC66 /* RecursiveLock.swift */; };
+		31D8C53F21CD199C0078BC66 /* Bag+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53921CD199C0078BC66 /* Bag+Rx.swift */; };
+		31D8C54021CD199C0078BC66 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53A21CD199C0078BC66 /* Bag.swift */; };
+		31D8C54821CD26D00078BC66 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C54721CD26D00078BC66 /* Errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,10 @@
 		31D8C53021CCF0570078BC66 /* AtomicInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicInt.swift; sourceTree = "<group>"; };
 		31D8C53221CCF0800078BC66 /* RxAtomic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxAtomic.h; sourceTree = "<group>"; };
 		31D8C53321CCF35A0078BC66 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		31D8C53421CD199C0078BC66 /* RecursiveLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveLock.swift; sourceTree = "<group>"; };
+		31D8C53921CD199C0078BC66 /* Bag+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bag+Rx.swift"; sourceTree = "<group>"; };
+		31D8C53A21CD199C0078BC66 /* Bag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
+		31D8C54721CD26D00078BC66 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +179,7 @@
 				31D8C53221CCF0800078BC66 /* RxAtomic.h */,
 				3161DFA521CBA89200185693 /* AnonymousObserver.swift */,
 				31D8C53021CCF0570078BC66 /* AtomicInt.swift */,
+				31D8C54721CD26D00078BC66 /* Errors.swift */,
 				3161DF9221CB856100185693 /* Event.swift */,
 				3161DF9821CB85D000185693 /* Observable.swift */,
 				3161DF9421CB859A00185693 /* ObservableConvertibleType.swift */,
@@ -179,8 +188,12 @@
 				3161DF9E21CB8D0400185693 /* ObserverBase.swift */,
 				3161DF9A21CB864400185693 /* ObserverType.swift */,
 				3161DFA021CB8DE400185693 /* Platform.Darwin.swift */,
+				31D8C53421CD199C0078BC66 /* RecursiveLock.swift */,
 				3161DF8C21CB816200185693 /* Rx.swift */,
+				31D8C54421CD239E0078BC66 /* Concurrency */,
+				31D8C53821CD199C0078BC66 /* DataStructures */,
 				3161DFB121CBCBF600185693 /* Disposables */,
+				31D8C53521CD199C0078BC66 /* Subject */,
 			);
 			path = RxSwift;
 			sourceTree = "<group>";
@@ -197,6 +210,29 @@
 				3161DFAF21CBAE9C00185693 /* NopDisposable.swift */,
 			);
 			path = Disposables;
+			sourceTree = "<group>";
+		};
+		31D8C53521CD199C0078BC66 /* Subject */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subject;
+			sourceTree = "<group>";
+		};
+		31D8C53821CD199C0078BC66 /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				31D8C53921CD199C0078BC66 /* Bag+Rx.swift */,
+				31D8C53A21CD199C0078BC66 /* Bag.swift */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		31D8C54421CD239E0078BC66 /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Concurrency;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,9 +368,11 @@
 			files = (
 				3161DF9B21CB864400185693 /* ObserverType.swift in Sources */,
 				3161DFA821CBAB1000185693 /* AnonymousDisposable.swift in Sources */,
+				31D8C54821CD26D00078BC66 /* Errors.swift in Sources */,
 				3161DFA621CBA89200185693 /* AnonymousObserver.swift in Sources */,
 				3161DF9921CB85D000185693 /* Observable.swift in Sources */,
 				3161DF9D21CB8AC500185693 /* ObservableType+Extensions.swift in Sources */,
+				31D8C54021CD199C0078BC66 /* Bag.swift in Sources */,
 				3161DFAC21CBAB8600185693 /* Cancelable.swift in Sources */,
 				3161DF9521CB859A00185693 /* ObservableConvertibleType.swift in Sources */,
 				3161DF9721CB85BB00185693 /* ObservableType.swift in Sources */,
@@ -342,6 +380,7 @@
 				3161DFAA21CBAB5E00185693 /* DisposeBase.swift in Sources */,
 				3161DF9121CB853300185693 /* Disposable.swift in Sources */,
 				3161DF4621CB59DC00185693 /* ViewController.swift in Sources */,
+				31D8C53F21CD199C0078BC66 /* Bag+Rx.swift in Sources */,
 				3161DFB321CBCCAE00185693 /* BinaryDisposable.swift in Sources */,
 				3161DFA121CB8DE400185693 /* Platform.Darwin.swift in Sources */,
 				3161DFB021CBAE9C00185693 /* NopDisposable.swift in Sources */,
@@ -350,6 +389,7 @@
 				3161DF4421CB59DC00185693 /* AppDelegate.swift in Sources */,
 				3161DF9321CB856100185693 /* Event.swift in Sources */,
 				31D8C53121CCF0570078BC66 /* AtomicInt.swift in Sources */,
+				31D8C53C21CD199C0078BC66 /* RecursiveLock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

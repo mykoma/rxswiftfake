@@ -8,6 +8,24 @@
 
 import Foundation
 
+fileprivate var resourceCount = AtomicInt(0)
+
+struct Resources {
+    
+    static var total: Int32 {
+        return resourceCount.load()
+    }
+    
+    static func incrementTotal() -> Int32 {
+        return resourceCount.increment()
+    }
+    
+    static func decrementTotal() -> Int32 {
+        return resourceCount.decrement()
+    }
+    
+}
+
 func rxAbstractMethod(file: StaticString = #file, line: UInt = #line) -> Swift.Never {
     rxFatalError("Abstract method", file: file, line: line)
 }
