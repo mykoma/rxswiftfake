@@ -15,8 +15,8 @@ final class BehaviorSubject<ElementType>:
     ObserverType,
     Cancelable { // RxSwift的代码是Disposable
     
+    typealias SubjectObserverType = BehaviorSubject<ElementType>
     typealias E = ElementType
-    
     // 一个subject可能会有多个订阅者，所以需要一个容器来装载这些订阅者，这里就定义了Bag的存在意义
     typealias Observers = AnyObserver<E>.s // Bag<(Event<E>) -> Void>
     typealias DisposeKey = Observers.KeyType
@@ -33,7 +33,7 @@ final class BehaviorSubject<ElementType>:
         super.init()
     }
     
-    func asObserver() -> BehaviorSubject<E> {
+    func asObserver() -> SubjectObserverType {
         return self
     }
     

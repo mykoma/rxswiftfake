@@ -12,8 +12,10 @@ final class PublishSubject<ElementType>:
     Observable<ElementType>,
     Cancelable,
     ObserverType,
-    SynchronizedUnsubscribeType, SubjectType {
+    SynchronizedUnsubscribeType,
+    SubjectType {
     
+    typealias SubjectObserverType = PublishSubject<ElementType>
     typealias Observers = AnyObserver<ElementType>.s
     typealias DisposeKey = Observers.KeyType
 
@@ -40,8 +42,9 @@ final class PublishSubject<ElementType>:
         case .error,.completed:
             if _stoppedEvent == nil {
                 _stoppedEvent = event
+                let observers = _observers
                 _observers.removeAll()
-                return _observers
+                return observers
             }
             return Observers()
         }
@@ -87,7 +90,7 @@ final class PublishSubject<ElementType>:
         _ = _observers.removeKey(disposeKey)
     }
     
-    func asObserver() -> PublishSubject<ElementType> {
+    func asObserver() -> SubjectObserverType {
         return self
     }
     
