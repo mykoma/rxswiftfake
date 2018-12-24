@@ -41,6 +41,7 @@
 		31D8C54E21CF387C0078BC66 /* SynchronizedUnsubscribeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C54D21CF387C0078BC66 /* SynchronizedUnsubscribeType.swift */; };
 		31D8C55021CF38840078BC66 /* AnyObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C54F21CF38840078BC66 /* AnyObserver.swift */; };
 		31D8C55221CF38910078BC66 /* SubscriptionDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C55121CF38910078BC66 /* SubscriptionDisposable.swift */; };
+		31D8C55621D0A04D0078BC66 /* PublishSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C55521D0A04D0078BC66 /* PublishSubject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		31D8C54D21CF387C0078BC66 /* SynchronizedUnsubscribeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedUnsubscribeType.swift; sourceTree = "<group>"; };
 		31D8C54F21CF38840078BC66 /* AnyObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyObserver.swift; sourceTree = "<group>"; };
 		31D8C55121CF38910078BC66 /* SubscriptionDisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionDisposable.swift; sourceTree = "<group>"; };
+		31D8C55521D0A04D0078BC66 /* PublishSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishSubject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				31D8C54A21CF38750078BC66 /* BehaviorSubject.swift */,
+				31D8C55521D0A04D0078BC66 /* PublishSubject.swift */,
 				31D8C54921CF38750078BC66 /* SubjectType.swift */,
 			);
 			path = Subject;
@@ -401,6 +404,7 @@
 				3161DF4621CB59DC00185693 /* ViewController.swift in Sources */,
 				31D8C53F21CD199C0078BC66 /* Bag+Rx.swift in Sources */,
 				3161DFB321CBCCAE00185693 /* BinaryDisposable.swift in Sources */,
+				31D8C55621D0A04D0078BC66 /* PublishSubject.swift in Sources */,
 				3161DFA121CB8DE400185693 /* Platform.Darwin.swift in Sources */,
 				3161DFB021CBAE9C00185693 /* NopDisposable.swift in Sources */,
 				3161DF9F21CB8D0400185693 /* ObserverBase.swift in Sources */,
