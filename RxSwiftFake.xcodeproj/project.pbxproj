@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31608D1921D113C5003FCADA /* AsyncSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31608D1821D113C5003FCADA /* AsyncSubject.swift */; };
 		3161DF4421CB59DC00185693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DF4321CB59DC00185693 /* AppDelegate.swift */; };
 		3161DF4621CB59DC00185693 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DF4521CB59DC00185693 /* ViewController.swift */; };
 		3161DF4921CB59DC00185693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3161DF4721CB59DC00185693 /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31608D1821D113C5003FCADA /* AsyncSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSubject.swift; sourceTree = "<group>"; };
 		3161DF4021CB59DC00185693 /* RxSwiftFake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftFake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3161DF4321CB59DC00185693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3161DF4521CB59DC00185693 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 		31D8C53521CD199C0078BC66 /* Subject */ = {
 			isa = PBXGroup;
 			children = (
+				31608D1821D113C5003FCADA /* AsyncSubject.swift */,
 				31D8C54A21CF38750078BC66 /* BehaviorSubject.swift */,
 				31D8C55521D0A04D0078BC66 /* PublishSubject.swift */,
 				31D8C54921CF38750078BC66 /* SubjectType.swift */,
@@ -403,6 +406,7 @@
 				3161DF9121CB853300185693 /* Disposable.swift in Sources */,
 				3161DF4621CB59DC00185693 /* ViewController.swift in Sources */,
 				31D8C53F21CD199C0078BC66 /* Bag+Rx.swift in Sources */,
+				31608D1921D113C5003FCADA /* AsyncSubject.swift in Sources */,
 				3161DFB321CBCCAE00185693 /* BinaryDisposable.swift in Sources */,
 				31D8C55621D0A04D0078BC66 /* PublishSubject.swift in Sources */,
 				3161DFA121CB8DE400185693 /* Platform.Darwin.swift in Sources */,
