@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		31608D1921D113C5003FCADA /* AsyncSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31608D1821D113C5003FCADA /* AsyncSubject.swift */; };
+		31608D1B21D13711003FCADA /* ReplaySubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31608D1A21D13711003FCADA /* ReplaySubject.swift */; };
+		31608D3521D27251003FCADA /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31608D3421D27251003FCADA /* Queue.swift */; };
 		3161DF4421CB59DC00185693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DF4321CB59DC00185693 /* AppDelegate.swift */; };
 		3161DF4621CB59DC00185693 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DF4521CB59DC00185693 /* ViewController.swift */; };
 		3161DF4921CB59DC00185693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3161DF4721CB59DC00185693 /* Main.storyboard */; };
@@ -64,6 +66,8 @@
 
 /* Begin PBXFileReference section */
 		31608D1821D113C5003FCADA /* AsyncSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSubject.swift; sourceTree = "<group>"; };
+		31608D1A21D13711003FCADA /* ReplaySubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaySubject.swift; sourceTree = "<group>"; };
+		31608D3421D27251003FCADA /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		3161DF4021CB59DC00185693 /* RxSwiftFake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftFake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3161DF4321CB59DC00185693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3161DF4521CB59DC00185693 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +238,7 @@
 				31608D1821D113C5003FCADA /* AsyncSubject.swift */,
 				31D8C54A21CF38750078BC66 /* BehaviorSubject.swift */,
 				31D8C55521D0A04D0078BC66 /* PublishSubject.swift */,
+				31608D1A21D13711003FCADA /* ReplaySubject.swift */,
 				31D8C54921CF38750078BC66 /* SubjectType.swift */,
 			);
 			path = Subject;
@@ -244,6 +249,7 @@
 			children = (
 				31D8C53A21CD199C0078BC66 /* Bag.swift */,
 				31D8C53921CD199C0078BC66 /* Bag+Rx.swift */,
+				31608D3421D27251003FCADA /* Queue.swift */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -398,6 +404,7 @@
 				31D8C54021CD199C0078BC66 /* Bag.swift in Sources */,
 				3161DFAC21CBAB8600185693 /* Cancelable.swift in Sources */,
 				3161DF9521CB859A00185693 /* ObservableConvertibleType.swift in Sources */,
+				31608D1B21D13711003FCADA /* ReplaySubject.swift in Sources */,
 				31D8C54E21CF387C0078BC66 /* SynchronizedUnsubscribeType.swift in Sources */,
 				3161DF9721CB85BB00185693 /* ObservableType.swift in Sources */,
 				3161DF8D21CB816200185693 /* Rx.swift in Sources */,
@@ -411,6 +418,7 @@
 				31D8C55621D0A04D0078BC66 /* PublishSubject.swift in Sources */,
 				3161DFA121CB8DE400185693 /* Platform.Darwin.swift in Sources */,
 				3161DFB021CBAE9C00185693 /* NopDisposable.swift in Sources */,
+				31608D3521D27251003FCADA /* Queue.swift in Sources */,
 				3161DF9F21CB8D0400185693 /* ObserverBase.swift in Sources */,
 				3161DFAE21CBAC0F00185693 /* Disposables.swift in Sources */,
 				3161DF4421CB59DC00185693 /* AppDelegate.swift in Sources */,
