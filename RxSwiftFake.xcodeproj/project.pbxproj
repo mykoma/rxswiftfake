@@ -34,6 +34,9 @@
 		3161DFAE21CBAC0F00185693 /* Disposables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DFAD21CBAC0F00185693 /* Disposables.swift */; };
 		3161DFB021CBAE9C00185693 /* NopDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DFAF21CBAE9C00185693 /* NopDisposable.swift */; };
 		3161DFB321CBCCAE00185693 /* BinaryDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161DFB221CBCCAE00185693 /* BinaryDisposable.swift */; };
+		316E193A21D78DBF00F93550 /* Producer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316E193721D78DBF00F93550 /* Producer.swift */; };
+		316E193B21D78DBF00F93550 /* Sink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316E193821D78DBF00F93550 /* Sink.swift */; };
+		316E193C21D78DBF00F93550 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316E193921D78DBF00F93550 /* Filter.swift */; };
 		31D8C53121CCF0570078BC66 /* AtomicInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53021CCF0570078BC66 /* AtomicInt.swift */; };
 		31D8C53C21CD199C0078BC66 /* RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53421CD199C0078BC66 /* RecursiveLock.swift */; };
 		31D8C53F21CD199C0078BC66 /* Bag+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53921CD199C0078BC66 /* Bag+Rx.swift */; };
@@ -98,6 +101,9 @@
 		3161DFAD21CBAC0F00185693 /* Disposables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposables.swift; sourceTree = "<group>"; };
 		3161DFAF21CBAE9C00185693 /* NopDisposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NopDisposable.swift; sourceTree = "<group>"; };
 		3161DFB221CBCCAE00185693 /* BinaryDisposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryDisposable.swift; sourceTree = "<group>"; };
+		316E193721D78DBF00F93550 /* Producer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Producer.swift; sourceTree = "<group>"; };
+		316E193821D78DBF00F93550 /* Sink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sink.swift; sourceTree = "<group>"; };
+		316E193921D78DBF00F93550 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		31D8C53021CCF0570078BC66 /* AtomicInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicInt.swift; sourceTree = "<group>"; };
 		31D8C53221CCF0800078BC66 /* RxAtomic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxAtomic.h; sourceTree = "<group>"; };
 		31D8C53321CCF35A0078BC66 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
@@ -212,6 +218,7 @@
 				31D8C54421CD239E0078BC66 /* Concurrency */,
 				31D8C53821CD199C0078BC66 /* DataStructures */,
 				3161DFB121CBCBF600185693 /* Disposables */,
+				316E193621D78DBF00F93550 /* Observables */,
 				31D8C53521CD199C0078BC66 /* Subject */,
 			);
 			path = RxSwift;
@@ -230,6 +237,16 @@
 				31D8C55121CF38910078BC66 /* SubscriptionDisposable.swift */,
 			);
 			path = Disposables;
+			sourceTree = "<group>";
+		};
+		316E193621D78DBF00F93550 /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				316E193721D78DBF00F93550 /* Producer.swift */,
+				316E193821D78DBF00F93550 /* Sink.swift */,
+				316E193921D78DBF00F93550 /* Filter.swift */,
+			);
+			path = Observables;
 			sourceTree = "<group>";
 		};
 		31D8C53521CD199C0078BC66 /* Subject */ = {
@@ -418,12 +435,15 @@
 				31D8C55621D0A04D0078BC66 /* PublishSubject.swift in Sources */,
 				3161DFA121CB8DE400185693 /* Platform.Darwin.swift in Sources */,
 				3161DFB021CBAE9C00185693 /* NopDisposable.swift in Sources */,
+				316E193C21D78DBF00F93550 /* Filter.swift in Sources */,
+				316E193A21D78DBF00F93550 /* Producer.swift in Sources */,
 				31608D3521D27251003FCADA /* Queue.swift in Sources */,
 				3161DF9F21CB8D0400185693 /* ObserverBase.swift in Sources */,
 				3161DFAE21CBAC0F00185693 /* Disposables.swift in Sources */,
 				3161DF4421CB59DC00185693 /* AppDelegate.swift in Sources */,
 				31D8C54B21CF38760078BC66 /* SubjectType.swift in Sources */,
 				3161DF9321CB856100185693 /* Event.swift in Sources */,
+				316E193B21D78DBF00F93550 /* Sink.swift in Sources */,
 				31D8C53121CCF0570078BC66 /* AtomicInt.swift in Sources */,
 				31D8C53C21CD199C0078BC66 /* RecursiveLock.swift in Sources */,
 			);
