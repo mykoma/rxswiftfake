@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		314B015021DA740F009B11F6 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B014F21DA740F009B11F6 /* Map.swift */; };
 		31608D1921D113C5003FCADA /* AsyncSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31608D1821D113C5003FCADA /* AsyncSubject.swift */; };
 		31608D1B21D13711003FCADA /* ReplaySubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31608D1A21D13711003FCADA /* ReplaySubject.swift */; };
 		31608D3521D27251003FCADA /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31608D3421D27251003FCADA /* Queue.swift */; };
@@ -68,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		314B014F21DA740F009B11F6 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		31608D1821D113C5003FCADA /* AsyncSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSubject.swift; sourceTree = "<group>"; };
 		31608D1A21D13711003FCADA /* ReplaySubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaySubject.swift; sourceTree = "<group>"; };
 		31608D3421D27251003FCADA /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
@@ -242,9 +244,10 @@
 		316E193621D78DBF00F93550 /* Observables */ = {
 			isa = PBXGroup;
 			children = (
+				316E193921D78DBF00F93550 /* Filter.swift */,
+				314B014F21DA740F009B11F6 /* Map.swift */,
 				316E193721D78DBF00F93550 /* Producer.swift */,
 				316E193821D78DBF00F93550 /* Sink.swift */,
-				316E193921D78DBF00F93550 /* Filter.swift */,
 			);
 			path = Observables;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				3161DF9D21CB8AC500185693 /* ObservableType+Extensions.swift in Sources */,
 				31D8C54021CD199C0078BC66 /* Bag.swift in Sources */,
 				3161DFAC21CBAB8600185693 /* Cancelable.swift in Sources */,
+				314B015021DA740F009B11F6 /* Map.swift in Sources */,
 				3161DF9521CB859A00185693 /* ObservableConvertibleType.swift in Sources */,
 				31608D1B21D13711003FCADA /* ReplaySubject.swift in Sources */,
 				31D8C54E21CF387C0078BC66 /* SynchronizedUnsubscribeType.swift in Sources */,
