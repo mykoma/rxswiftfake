@@ -16,6 +16,27 @@ extension ObservableType where E: ObservableConvertibleType {
     
 }
 
+extension ObservableType {
+    static func merge(_ sources: [Observable<E>]) -> Observable<E> {
+        return MergeArray(sources: sources)
+    }
+}
+
+final class MergeArray<ElementType>: Producer<ElementType> {
+    
+    private let _sources: [Observable<ElementType>]
+    
+    init(sources: [Observable<ElementType>]) {
+        _sources = sources
+    }
+    
+    override func run<O: ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where E == O.E {
+        let sink = MergeBasicSink<Observable<E>, O>(observer: observer, cancel: cancel)
+        let subscription = sink.run(_sources)
+        return (sink: sink, subscription: subscription)
+    }
+}
+
 final class Merge<SourceSequence: ObservableConvertibleType>: Producer<SourceSequence.E> {
     
     private let _source: Observable<SourceSequence>
@@ -41,7 +62,8 @@ fileprivate final class MergeBasicSink<S: ObservableConvertibleType, O: Observer
 }
 
 fileprivate class MergeSink<SourceElement, SourceSequence: ObservableConvertibleType, O: ObserverType>: Sink<O>, ObserverType where O.E == SourceSequence.E {
-    
+    typealias Element = SourceElement
+
     let _lock = RecursiveLock()
     let _sourceSubscription = SingleAssignmentDisposable()
     let _group = CompositeDisposable()
@@ -70,7 +92,7 @@ fileprivate class MergeSink<SourceElement, SourceSequence: ObservableConvertible
         switch event {
         case .next(let element):
             if let value = nextElementArrived(element: element) {
-                subscribeInner(value)
+                subscribeInner(value.asObservable())
             }
         case .error(let error):
             _lock.lock(); defer { _lock.unlock() }
@@ -83,7 +105,7 @@ fileprivate class MergeSink<SourceElement, SourceSequence: ObservableConvertible
         }
     }
     
-    func subscribeInner(_ source: SourceSequence) {
+    func subscribeInner(_ source: Observable<O.E>) {
         let iterDisposable = SingleAssignmentDisposable()
         if let disposeKey = _group.insert(iterDisposable) {
             let iter = MergeSinkIter(parent: self, disposeKey: disposeKey)
@@ -94,14 +116,26 @@ fileprivate class MergeSink<SourceElement, SourceSequence: ObservableConvertible
     
     @inline(__always)
     func checkCompleted() {
-        forwardOn(.completed)
-        dispose()
+        if _stopped && _activeCount == 0 {
+            forwardOn(.completed)
+            dispose()
+        }
     }
     
     func run(_ source: Observable<SourceElement>) -> Disposable {
         let _ = _group.insert(_sourceSubscription)
         let subscription = source.subscribe(self)
         _sourceSubscription.setDisposable(subscription)
+        return _group
+    }
+    
+    func run(_ sources: [Observable<O.E>]) -> Disposable {
+        _activeCount += sources.count
+        for source in sources {
+            subscribeInner(source)
+        }
+        _stopped = true
+        checkCompleted()
         return _group
     }
     
