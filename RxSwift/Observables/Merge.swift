@@ -17,9 +17,15 @@ extension ObservableType where E: ObservableConvertibleType {
 }
 
 extension ObservableType {
+    
     static func merge(_ sources: [Observable<E>]) -> Observable<E> {
         return MergeArray(sources: sources)
     }
+    
+    static func merge(_ sources: Observable<E>...) -> Observable<E> {
+        return MergeArray(sources: sources)
+    }
+    
 }
 
 final class MergeArray<ElementType>: Producer<ElementType> {
