@@ -32,6 +32,14 @@ extension ObservableType {
     
 }
 
+extension ObservableType where E: ObservableConvertibleType {
+    
+    func concat() -> Observable<E.E> {
+        return merge(maxConcurrent: 1)
+    }
+    
+}
+
 // MARK: - MergeArray
 
 final class MergeArray<ElementType>: Producer<ElementType> {
