@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31123D6421E4937000DA280B /* LockOwnerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31123D6321E4937000DA280B /* LockOwnerType.swift */; };
+		31123D6621E49C0A00DA280B /* SynchronizedOnType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31123D6521E49C0A00DA280B /* SynchronizedOnType.swift */; };
 		314B015021DA740F009B11F6 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B014F21DA740F009B11F6 /* Map.swift */; };
 		314B015721DB9D2A009B11F6 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B015621DB9D2A009B11F6 /* Merge.swift */; };
 		31608D1921D113C5003FCADA /* AsyncSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31608D1821D113C5003FCADA /* AsyncSubject.swift */; };
@@ -73,6 +75,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31123D6321E4937000DA280B /* LockOwnerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockOwnerType.swift; sourceTree = "<group>"; };
+		31123D6521E49C0A00DA280B /* SynchronizedOnType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedOnType.swift; sourceTree = "<group>"; };
 		314B014F21DA740F009B11F6 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		314B015621DB9D2A009B11F6 /* Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
 		31608D1821D113C5003FCADA /* AsyncSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSubject.swift; sourceTree = "<group>"; };
@@ -290,6 +294,8 @@
 			children = (
 				31D8C54D21CF387C0078BC66 /* SynchronizedUnsubscribeType.swift */,
 				3184EE0821DFA1300096D597 /* Lock.swift */,
+				31123D6321E4937000DA280B /* LockOwnerType.swift */,
+				31123D6521E49C0A00DA280B /* SynchronizedOnType.swift */,
 			);
 			path = Concurrency;
 			sourceTree = "<group>";
@@ -449,12 +455,14 @@
 				3161DF4621CB59DC00185693 /* ViewController.swift in Sources */,
 				31D8C53F21CD199C0078BC66 /* Bag+Rx.swift in Sources */,
 				31608D1921D113C5003FCADA /* AsyncSubject.swift in Sources */,
+				31123D6621E49C0A00DA280B /* SynchronizedOnType.swift in Sources */,
 				3161DFB321CBCCAE00185693 /* BinaryDisposable.swift in Sources */,
 				31D8C55621D0A04D0078BC66 /* PublishSubject.swift in Sources */,
 				314B015721DB9D2A009B11F6 /* Merge.swift in Sources */,
 				3161DFA121CB8DE400185693 /* Platform.Darwin.swift in Sources */,
 				3161DFB021CBAE9C00185693 /* NopDisposable.swift in Sources */,
 				316E193C21D78DBF00F93550 /* Filter.swift in Sources */,
+				31123D6421E4937000DA280B /* LockOwnerType.swift in Sources */,
 				316E193A21D78DBF00F93550 /* Producer.swift in Sources */,
 				3184EE0921DFA1300096D597 /* Lock.swift in Sources */,
 				31608D3521D27251003FCADA /* Queue.swift in Sources */,
