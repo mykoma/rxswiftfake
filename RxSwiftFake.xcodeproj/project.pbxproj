@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		31123D6421E4937000DA280B /* LockOwnerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31123D6321E4937000DA280B /* LockOwnerType.swift */; };
 		31123D6621E49C0A00DA280B /* SynchronizedOnType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31123D6521E49C0A00DA280B /* SynchronizedOnType.swift */; };
+		31123D6C21E5F5F400DA280B /* Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31123D6B21E5F5F400DA280B /* Create.swift */; };
 		314B015021DA740F009B11F6 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B014F21DA740F009B11F6 /* Map.swift */; };
 		314B015721DB9D2A009B11F6 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B015621DB9D2A009B11F6 /* Merge.swift */; };
 		31608D1921D113C5003FCADA /* AsyncSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31608D1821D113C5003FCADA /* AsyncSubject.swift */; };
@@ -77,6 +78,7 @@
 /* Begin PBXFileReference section */
 		31123D6321E4937000DA280B /* LockOwnerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockOwnerType.swift; sourceTree = "<group>"; };
 		31123D6521E49C0A00DA280B /* SynchronizedOnType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedOnType.swift; sourceTree = "<group>"; };
+		31123D6B21E5F5F400DA280B /* Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Create.swift; sourceTree = "<group>"; };
 		314B014F21DA740F009B11F6 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		314B015621DB9D2A009B11F6 /* Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
 		31608D1821D113C5003FCADA /* AsyncSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSubject.swift; sourceTree = "<group>"; };
@@ -258,11 +260,12 @@
 		316E193621D78DBF00F93550 /* Observables */ = {
 			isa = PBXGroup;
 			children = (
+				31123D6B21E5F5F400DA280B /* Create.swift */,
 				316E193921D78DBF00F93550 /* Filter.swift */,
 				314B014F21DA740F009B11F6 /* Map.swift */,
+				314B015621DB9D2A009B11F6 /* Merge.swift */,
 				316E193721D78DBF00F93550 /* Producer.swift */,
 				316E193821D78DBF00F93550 /* Sink.swift */,
-				314B015621DB9D2A009B11F6 /* Merge.swift */,
 			);
 			path = Observables;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				3161DFA621CBA89200185693 /* AnonymousObserver.swift in Sources */,
 				3184EE0721DFA0FA0096D597 /* CompositeDisposable.swift in Sources */,
 				31D8C55021CF38840078BC66 /* AnyObserver.swift in Sources */,
+				31123D6C21E5F5F400DA280B /* Create.swift in Sources */,
 				3161DF9921CB85D000185693 /* Observable.swift in Sources */,
 				3161DF9D21CB8AC500185693 /* ObservableType+Extensions.swift in Sources */,
 				31D8C54021CD199C0078BC66 /* Bag.swift in Sources */,
