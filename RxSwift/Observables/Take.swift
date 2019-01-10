@@ -10,11 +10,11 @@ import Foundation
 
 extension ObservableType {
     
-    func take(count: Int) -> Observable<E> {
+    func take(_ count: Int) -> Observable<E> {
         if count == 0 {
             return Observable.empty()
         } else {
-            return TakeCount(count: count, source: asObservable())
+            return TakeCount(source: asObservable(), count: count)
         }
     }
     
@@ -26,7 +26,7 @@ fileprivate final class TakeCount<ElementType>: Producer<ElementType> {
     
     fileprivate let _source: Observable<ElementType>
     
-    init(count: Int, source: Observable<ElementType>) {
+    init(source: Observable<ElementType>, count: Int) {
         _count = count
         _source = source
     }
