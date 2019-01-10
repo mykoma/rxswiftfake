@@ -56,6 +56,14 @@ extension ObservableType where E: ObservableConvertibleType {
     
 }
 
+extension ObservableType {
+    
+    func concatMap<O: ObservableConvertibleType>(_ selector: @escaping (E) throws -> O) -> Observable<O.E> {
+        return ConcatMap(source: asObservable(), selector: selector)
+    }
+    
+}
+
 // MARK: - MergeArray
 
 final class MergeArray<ElementType>: Producer<ElementType> {
@@ -459,6 +467,45 @@ fileprivate final class FlatMapFirstSink<SourceElement, SourceSequence: Observab
     init(selector: @escaping Selector, observer: O, cancel: Cancelable) {
         _selector = selector
         super.init(observer: observer, cancel: cancel)
+    }
+    
+    override func performMap(_ element: SourceElement) throws -> SourceSequence {
+        return try _selector(element)
+    }
+    
+}
+
+// MARK: - ConcatMap
+
+final fileprivate class ConcatMap<SourceElement, SourceSequence: ObservableConvertibleType>: Producer<SourceSequence.E> {
+    
+    typealias Selector = (SourceElement) throws -> SourceSequence
+    
+    private let _source: Observable<SourceElement>
+    private let _selector: Selector
+    
+    init(source: Observable<SourceElement>, selector: @escaping Selector) {
+        _source = source
+        _selector = selector
+    }
+    
+    override func run<O: ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == SourceSequence.E {
+        let sink = ConcatMapSink(selector: _selector, observer: observer, cancel: cancel)
+        let subscription = sink.run(_source)
+        return (sink: sink, subscription: subscription)
+    }
+    
+}
+
+final fileprivate class ConcatMapSink<SourceElement, SourceSequence: ObservableConvertibleType, O: ObserverType>: MergeLimitedSink<SourceElement, SourceSequence, O> where SourceSequence.E == O.E {
+
+    typealias Selector = (SourceElement) throws -> SourceSequence
+
+    private let _selector: Selector
+
+    init(selector: @escaping Selector, observer: O, cancel: Cancelable) {
+        _selector = selector
+        super.init(maxConcurrent: 1, observer: observer, cancel: cancel)
     }
     
     override func performMap(_ element: SourceElement) throws -> SourceSequence {
