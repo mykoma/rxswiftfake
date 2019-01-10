@@ -10,6 +10,8 @@
 		31123D6421E4937000DA280B /* LockOwnerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31123D6321E4937000DA280B /* LockOwnerType.swift */; };
 		31123D6621E49C0A00DA280B /* SynchronizedOnType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31123D6521E49C0A00DA280B /* SynchronizedOnType.swift */; };
 		31123D6C21E5F5F400DA280B /* Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31123D6B21E5F5F400DA280B /* Create.swift */; };
+		31123D7121E77B7A00DA280B /* Take.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31123D7021E77B7A00DA280B /* Take.swift */; };
+		31123D7321E780DC00DA280B /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31123D7221E780DC00DA280B /* Empty.swift */; };
 		314B015021DA740F009B11F6 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B014F21DA740F009B11F6 /* Map.swift */; };
 		314B015721DB9D2A009B11F6 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B015621DB9D2A009B11F6 /* Merge.swift */; };
 		31608D1921D113C5003FCADA /* AsyncSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31608D1821D113C5003FCADA /* AsyncSubject.swift */; };
@@ -79,6 +81,8 @@
 		31123D6321E4937000DA280B /* LockOwnerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockOwnerType.swift; sourceTree = "<group>"; };
 		31123D6521E49C0A00DA280B /* SynchronizedOnType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedOnType.swift; sourceTree = "<group>"; };
 		31123D6B21E5F5F400DA280B /* Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Create.swift; sourceTree = "<group>"; };
+		31123D7021E77B7A00DA280B /* Take.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Take.swift; sourceTree = "<group>"; };
+		31123D7221E780DC00DA280B /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
 		314B014F21DA740F009B11F6 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		314B015621DB9D2A009B11F6 /* Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
 		31608D1821D113C5003FCADA /* AsyncSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSubject.swift; sourceTree = "<group>"; };
@@ -261,11 +265,13 @@
 			isa = PBXGroup;
 			children = (
 				31123D6B21E5F5F400DA280B /* Create.swift */,
+				31123D7221E780DC00DA280B /* Empty.swift */,
 				316E193921D78DBF00F93550 /* Filter.swift */,
 				314B014F21DA740F009B11F6 /* Map.swift */,
 				314B015621DB9D2A009B11F6 /* Merge.swift */,
 				316E193721D78DBF00F93550 /* Producer.swift */,
 				316E193821D78DBF00F93550 /* Sink.swift */,
+				31123D7021E77B7A00DA280B /* Take.swift */,
 			);
 			path = Observables;
 			sourceTree = "<group>";
@@ -457,6 +463,7 @@
 				31D8C54C21CF38760078BC66 /* BehaviorSubject.swift in Sources */,
 				3161DF9121CB853300185693 /* Disposable.swift in Sources */,
 				3161DF4621CB59DC00185693 /* ViewController.swift in Sources */,
+				31123D7121E77B7A00DA280B /* Take.swift in Sources */,
 				31D8C53F21CD199C0078BC66 /* Bag+Rx.swift in Sources */,
 				31608D1921D113C5003FCADA /* AsyncSubject.swift in Sources */,
 				31123D6621E49C0A00DA280B /* SynchronizedOnType.swift in Sources */,
@@ -464,6 +471,7 @@
 				31D8C55621D0A04D0078BC66 /* PublishSubject.swift in Sources */,
 				314B015721DB9D2A009B11F6 /* Merge.swift in Sources */,
 				3161DFA121CB8DE400185693 /* Platform.Darwin.swift in Sources */,
+				31123D7321E780DC00DA280B /* Empty.swift in Sources */,
 				3161DFB021CBAE9C00185693 /* NopDisposable.swift in Sources */,
 				316E193C21D78DBF00F93550 /* Filter.swift in Sources */,
 				31123D6421E4937000DA280B /* LockOwnerType.swift in Sources */,
