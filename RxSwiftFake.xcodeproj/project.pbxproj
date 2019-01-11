@@ -13,6 +13,7 @@
 		31123D7121E77B7A00DA280B /* Take.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31123D7021E77B7A00DA280B /* Take.swift */; };
 		31123D7321E780DC00DA280B /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31123D7221E780DC00DA280B /* Empty.swift */; };
 		31123D7521E7972C00DA280B /* TakeLast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31123D7421E7972C00DA280B /* TakeLast.swift */; };
+		31123D7821E8370100DA280B /* TakeUntil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31123D7721E8370100DA280B /* TakeUntil.swift */; };
 		314B015021DA740F009B11F6 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B014F21DA740F009B11F6 /* Map.swift */; };
 		314B015721DB9D2A009B11F6 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B015621DB9D2A009B11F6 /* Merge.swift */; };
 		31608D1921D113C5003FCADA /* AsyncSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31608D1821D113C5003FCADA /* AsyncSubject.swift */; };
@@ -85,6 +86,7 @@
 		31123D7021E77B7A00DA280B /* Take.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Take.swift; sourceTree = "<group>"; };
 		31123D7221E780DC00DA280B /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
 		31123D7421E7972C00DA280B /* TakeLast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeLast.swift; sourceTree = "<group>"; };
+		31123D7721E8370100DA280B /* TakeUntil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeUntil.swift; sourceTree = "<group>"; };
 		314B014F21DA740F009B11F6 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		314B015621DB9D2A009B11F6 /* Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
 		31608D1821D113C5003FCADA /* AsyncSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSubject.swift; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 				316E193821D78DBF00F93550 /* Sink.swift */,
 				31123D7021E77B7A00DA280B /* Take.swift */,
 				31123D7421E7972C00DA280B /* TakeLast.swift */,
+				31123D7721E8370100DA280B /* TakeUntil.swift */,
 			);
 			path = Observables;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				3161DFAE21CBAC0F00185693 /* Disposables.swift in Sources */,
 				3161DF4421CB59DC00185693 /* AppDelegate.swift in Sources */,
 				31D8C54B21CF38760078BC66 /* SubjectType.swift in Sources */,
+				31123D7821E8370100DA280B /* TakeUntil.swift in Sources */,
 				3161DF9321CB856100185693 /* Event.swift in Sources */,
 				316E193B21D78DBF00F93550 /* Sink.swift in Sources */,
 				31D8C53121CCF0570078BC66 /* AtomicInt.swift in Sources */,
