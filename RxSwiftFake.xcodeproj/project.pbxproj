@@ -18,6 +18,7 @@
 		31123D7C21E887EF00DA280B /* Skip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31123D7B21E887EF00DA280B /* Skip.swift */; };
 		31123D7E21E8968A00DA280B /* SkipUntil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31123D7D21E8968A00DA280B /* SkipUntil.swift */; };
 		31123D8021E8E62A00DA280B /* SkipWhile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31123D7F21E8E62A00DA280B /* SkipWhile.swift */; };
+		31123D8421EB778100DA280B /* Reduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31123D8321EB778100DA280B /* Reduce.swift */; };
 		314B015021DA740F009B11F6 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B014F21DA740F009B11F6 /* Map.swift */; };
 		314B015721DB9D2A009B11F6 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B015621DB9D2A009B11F6 /* Merge.swift */; };
 		31608D1921D113C5003FCADA /* AsyncSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31608D1821D113C5003FCADA /* AsyncSubject.swift */; };
@@ -95,6 +96,7 @@
 		31123D7B21E887EF00DA280B /* Skip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skip.swift; sourceTree = "<group>"; };
 		31123D7D21E8968A00DA280B /* SkipUntil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipUntil.swift; sourceTree = "<group>"; };
 		31123D7F21E8E62A00DA280B /* SkipWhile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipWhile.swift; sourceTree = "<group>"; };
+		31123D8321EB778100DA280B /* Reduce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reduce.swift; sourceTree = "<group>"; };
 		314B014F21DA740F009B11F6 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		314B015621DB9D2A009B11F6 /* Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
 		31608D1821D113C5003FCADA /* AsyncSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSubject.swift; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 				314B014F21DA740F009B11F6 /* Map.swift */,
 				314B015621DB9D2A009B11F6 /* Merge.swift */,
 				316E193721D78DBF00F93550 /* Producer.swift */,
+				31123D8321EB778100DA280B /* Reduce.swift */,
 				316E193821D78DBF00F93550 /* Sink.swift */,
 				31123D7B21E887EF00DA280B /* Skip.swift */,
 				31123D7D21E8968A00DA280B /* SkipUntil.swift */,
@@ -496,6 +499,7 @@
 				31123D7321E780DC00DA280B /* Empty.swift in Sources */,
 				31123D7C21E887EF00DA280B /* Skip.swift in Sources */,
 				3161DFB021CBAE9C00185693 /* NopDisposable.swift in Sources */,
+				31123D8421EB778100DA280B /* Reduce.swift in Sources */,
 				316E193C21D78DBF00F93550 /* Filter.swift in Sources */,
 				31123D6421E4937000DA280B /* LockOwnerType.swift in Sources */,
 				316E193A21D78DBF00F93550 /* Producer.swift in Sources */,
