@@ -10,7 +10,7 @@ import Foundation
 
 extension ObservableType {
     
-    func skipWhile(_ predicate: @escaping (E) -> Bool ) -> Observable<E> {
+    func skipWhile(_ predicate: @escaping (E) throws -> Bool ) -> Observable<E> {
         return SkipWhile(source: asObservable(), predicate: predicate)
     }
     

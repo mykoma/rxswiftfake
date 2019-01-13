@@ -10,7 +10,7 @@ import Foundation
 
 extension ObservableType {
     
-    func takeWhile(_ predicate: @escaping (E) -> Bool) -> Observable<E> {
+    func takeWhile(_ predicate: @escaping (E) throws -> Bool) -> Observable<E> {
         return TakeWhile(source: asObservable(), predicate: predicate)
     }
     
@@ -18,7 +18,7 @@ extension ObservableType {
 
 fileprivate final class TakeWhile<ElementType>: Producer<ElementType> {
     
-    typealias Predicate = (ElementType) -> Bool
+    typealias Predicate = (ElementType) throws -> Bool
     
     fileprivate let _source: Observable<ElementType>
     fileprivate let _predicate: Predicate
