@@ -33,3 +33,11 @@ func rxAbstractMethod(file: StaticString = #file, line: UInt = #line) -> Swift.N
 func rxFatalError(_ lastMessage: @autoclosure () -> String, file: StaticString = #file, line: UInt = #line) -> Swift.Never {
     fatalError(lastMessage(), file: file, line: line)
 }
+
+func decrementChecked(_ i: inout Int) throws -> Int {
+    if i == Int.min {
+        throw RxError.overflow
+    }
+    defer { i -= 1 }
+    return i
+}
