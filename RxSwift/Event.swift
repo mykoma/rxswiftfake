@@ -17,3 +17,13 @@ public enum Event<ElementType> {
     case completed
     
 }
+
+extension Event {
+    /// Is `completed` or `error` event.
+    public var isStopEvent: Bool {
+        switch self {
+        case .next: return false
+        case .error, .completed: return true
+        }
+    }
+}
