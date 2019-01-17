@@ -57,6 +57,7 @@
 		3184571021EE229C0010CD1E /* ElementAt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3184570F21EE229C0010CD1E /* ElementAt.swift */; };
 		3184572521EF33250010CD1E /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3184572421EF33250010CD1E /* Sample.swift */; };
 		3184572721EF727C0010CD1E /* Defered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3184572621EF727C0010CD1E /* Defered.swift */; };
+		3184572921EF7C8F0010CD1E /* DistinctUntilChanged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3184572821EF7C8F0010CD1E /* DistinctUntilChanged.swift */; };
 		3184EE0521DF94B50096D597 /* SingleAssignmentDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3184EE0421DF94B50096D597 /* SingleAssignmentDisposable.swift */; };
 		3184EE0721DFA0FA0096D597 /* CompositeDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3184EE0621DFA0FA0096D597 /* CompositeDisposable.swift */; };
 		3184EE0921DFA1300096D597 /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3184EE0821DFA1300096D597 /* Lock.swift */; };
@@ -148,6 +149,7 @@
 		3184570F21EE229C0010CD1E /* ElementAt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementAt.swift; sourceTree = "<group>"; };
 		3184572421EF33250010CD1E /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		3184572621EF727C0010CD1E /* Defered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defered.swift; sourceTree = "<group>"; };
+		3184572821EF7C8F0010CD1E /* DistinctUntilChanged.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistinctUntilChanged.swift; sourceTree = "<group>"; };
 		3184EE0421DF94B50096D597 /* SingleAssignmentDisposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAssignmentDisposable.swift; sourceTree = "<group>"; };
 		3184EE0621DFA0FA0096D597 /* CompositeDisposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeDisposable.swift; sourceTree = "<group>"; };
 		3184EE0821DFA1300096D597 /* Lock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 				31AFF68C21EDD08E003CF665 /* Amb.swift */,
 				31123D6B21E5F5F400DA280B /* Create.swift */,
 				3184572621EF727C0010CD1E /* Defered.swift */,
+				3184572821EF7C8F0010CD1E /* DistinctUntilChanged.swift */,
 				3184570F21EE229C0010CD1E /* ElementAt.swift */,
 				31123D7221E780DC00DA280B /* Empty.swift */,
 				316E193921D78DBF00F93550 /* Filter.swift */,
@@ -499,6 +502,7 @@
 				31D8C54021CD199C0078BC66 /* Bag.swift in Sources */,
 				3161DFAC21CBAB8600185693 /* Cancelable.swift in Sources */,
 				31123D8021E8E62A00DA280B /* SkipWhile.swift in Sources */,
+				3184572921EF7C8F0010CD1E /* DistinctUntilChanged.swift in Sources */,
 				314B015021DA740F009B11F6 /* Map.swift in Sources */,
 				3184EE0521DF94B50096D597 /* SingleAssignmentDisposable.swift in Sources */,
 				3161DF9521CB859A00185693 /* ObservableConvertibleType.swift in Sources */,
