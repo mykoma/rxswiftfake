@@ -34,6 +34,14 @@ func rxFatalError(_ lastMessage: @autoclosure () -> String, file: StaticString =
     fatalError(lastMessage(), file: file, line: line)
 }
 
+func incrementChecked(_ i: inout Int) throws -> Int {
+    if i == Int.max {
+        throw RxError.overflow
+    }
+    defer { i += 1 }
+    return i
+}
+
 func decrementChecked(_ i: inout Int) throws -> Int {
     if i == Int.min {
         throw RxError.overflow
