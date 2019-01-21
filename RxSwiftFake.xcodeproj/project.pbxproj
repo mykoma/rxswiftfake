@@ -22,6 +22,8 @@
 		31365B9621F0C7BC00148121 /* RefCountDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31365B9521F0C7BC00148121 /* RefCountDisposable.swift */; };
 		31365BB521F1DB8500148121 /* CombineLatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31365BB421F1DB8500148121 /* CombineLatest.swift */; };
 		31365BBA21F4B83100148121 /* DefaultIfEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31365BB921F4B83100148121 /* DefaultIfEmpty.swift */; };
+		31365BC721F5968400148121 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31365BC621F5968400148121 /* Switch.swift */; };
+		31365BC921F5AC7E00148121 /* SerialDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31365BC821F5AC7E00148121 /* SerialDisposable.swift */; };
 		314B015021DA740F009B11F6 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B014F21DA740F009B11F6 /* Map.swift */; };
 		314B015721DB9D2A009B11F6 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B015621DB9D2A009B11F6 /* Merge.swift */; };
 		31608D1921D113C5003FCADA /* AsyncSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31608D1821D113C5003FCADA /* AsyncSubject.swift */; };
@@ -113,6 +115,8 @@
 		31365B9521F0C7BC00148121 /* RefCountDisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefCountDisposable.swift; sourceTree = "<group>"; };
 		31365BB421F1DB8500148121 /* CombineLatest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineLatest.swift; sourceTree = "<group>"; };
 		31365BB921F4B83100148121 /* DefaultIfEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultIfEmpty.swift; sourceTree = "<group>"; };
+		31365BC621F5968400148121 /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
+		31365BC821F5AC7E00148121 /* SerialDisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialDisposable.swift; sourceTree = "<group>"; };
 		314B014F21DA740F009B11F6 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		314B015621DB9D2A009B11F6 /* Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
 		31608D1821D113C5003FCADA /* AsyncSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSubject.swift; sourceTree = "<group>"; };
@@ -297,6 +301,7 @@
 				3161DFA921CBAB5E00185693 /* DisposeBase.swift */,
 				3161DFAF21CBAE9C00185693 /* NopDisposable.swift */,
 				31365B9521F0C7BC00148121 /* RefCountDisposable.swift */,
+				31365BC821F5AC7E00148121 /* SerialDisposable.swift */,
 				3184EE0421DF94B50096D597 /* SingleAssignmentDisposable.swift */,
 				31D8C55121CF38910078BC66 /* SubscriptionDisposable.swift */,
 			);
@@ -328,6 +333,7 @@
 				31123D7D21E8968A00DA280B /* SkipUntil.swift */,
 				31123D7F21E8E62A00DA280B /* SkipWhile.swift */,
 				3184570D21EDF2660010CD1E /* StartWith.swift */,
+				31365BC621F5968400148121 /* Switch.swift */,
 				31123D7021E77B7A00DA280B /* Take.swift */,
 				31123D7421E7972C00DA280B /* TakeLast.swift */,
 				31123D7721E8370100DA280B /* TakeUntil.swift */,
@@ -531,6 +537,7 @@
 				3161DFAA21CBAB5E00185693 /* DisposeBase.swift in Sources */,
 				31123D7A21E87FB500DA280B /* TakeWhile.swift in Sources */,
 				31D8C54C21CF38760078BC66 /* BehaviorSubject.swift in Sources */,
+				31365BC921F5AC7E00148121 /* SerialDisposable.swift in Sources */,
 				31365B9621F0C7BC00148121 /* RefCountDisposable.swift in Sources */,
 				3161DF9121CB853300185693 /* Disposable.swift in Sources */,
 				31365BB521F1DB8500148121 /* CombineLatest.swift in Sources */,
@@ -547,6 +554,7 @@
 				314B015721DB9D2A009B11F6 /* Merge.swift in Sources */,
 				3184571021EE229C0010CD1E /* ElementAt.swift in Sources */,
 				3161DFA121CB8DE400185693 /* Platform.Darwin.swift in Sources */,
+				31365BC721F5968400148121 /* Switch.swift in Sources */,
 				31123D7321E780DC00DA280B /* Empty.swift in Sources */,
 				31123D7C21E887EF00DA280B /* Skip.swift in Sources */,
 				3161DFB021CBAE9C00185693 /* NopDisposable.swift in Sources */,
