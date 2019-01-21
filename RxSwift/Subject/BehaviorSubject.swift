@@ -28,7 +28,7 @@ final class BehaviorSubject<ElementType>:
     
     let _lock = RecursiveLock()
     
-    init(_ value: E) {
+    init(value: E) {
         _element = value
         super.init()
     }
