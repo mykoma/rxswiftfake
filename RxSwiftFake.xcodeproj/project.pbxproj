@@ -24,6 +24,8 @@
 		31365BBA21F4B83100148121 /* DefaultIfEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31365BB921F4B83100148121 /* DefaultIfEmpty.swift */; };
 		31365BC721F5968400148121 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31365BC621F5968400148121 /* Switch.swift */; };
 		31365BC921F5AC7E00148121 /* SerialDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31365BC821F5AC7E00148121 /* SerialDisposable.swift */; };
+		31365BCC21F6127100148121 /* Using.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31365BCB21F6127100148121 /* Using.swift */; };
+		31365BCE21F6183600148121 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31365BCD21F6183600148121 /* Error.swift */; };
 		314B015021DA740F009B11F6 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B014F21DA740F009B11F6 /* Map.swift */; };
 		314B015721DB9D2A009B11F6 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B015621DB9D2A009B11F6 /* Merge.swift */; };
 		31608D1921D113C5003FCADA /* AsyncSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31608D1821D113C5003FCADA /* AsyncSubject.swift */; };
@@ -117,6 +119,8 @@
 		31365BB921F4B83100148121 /* DefaultIfEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultIfEmpty.swift; sourceTree = "<group>"; };
 		31365BC621F5968400148121 /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
 		31365BC821F5AC7E00148121 /* SerialDisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialDisposable.swift; sourceTree = "<group>"; };
+		31365BCB21F6127100148121 /* Using.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Using.swift; sourceTree = "<group>"; };
+		31365BCD21F6183600148121 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		314B014F21DA740F009B11F6 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		314B015621DB9D2A009B11F6 /* Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
 		31608D1821D113C5003FCADA /* AsyncSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSubject.swift; sourceTree = "<group>"; };
@@ -319,6 +323,7 @@
 				3184572821EF7C8F0010CD1E /* DistinctUntilChanged.swift */,
 				3184570F21EE229C0010CD1E /* ElementAt.swift */,
 				31123D7221E780DC00DA280B /* Empty.swift */,
+				31365BCD21F6183600148121 /* Error.swift */,
 				316E193921D78DBF00F93550 /* Filter.swift */,
 				3184573021F081DF0010CD1E /* GroupBy.swift */,
 				314B014F21DA740F009B11F6 /* Map.swift */,
@@ -338,6 +343,7 @@
 				31123D7421E7972C00DA280B /* TakeLast.swift */,
 				31123D7721E8370100DA280B /* TakeUntil.swift */,
 				31123D7921E87FB500DA280B /* TakeWhile.swift */,
+				31365BCB21F6127100148121 /* Using.swift */,
 			);
 			path = Observables;
 			sourceTree = "<group>";
@@ -527,6 +533,7 @@
 				314B015021DA740F009B11F6 /* Map.swift in Sources */,
 				3184EE0521DF94B50096D597 /* SingleAssignmentDisposable.swift in Sources */,
 				3161DF9521CB859A00185693 /* ObservableConvertibleType.swift in Sources */,
+				31365BCC21F6127100148121 /* Using.swift in Sources */,
 				31608D1B21D13711003FCADA /* ReplaySubject.swift in Sources */,
 				31D8C54E21CF387C0078BC66 /* SynchronizedUnsubscribeType.swift in Sources */,
 				317CDD2121EC9740002A9E78 /* Scan.swift in Sources */,
@@ -573,6 +580,7 @@
 				3161DF9321CB856100185693 /* Event.swift in Sources */,
 				316E193B21D78DBF00F93550 /* Sink.swift in Sources */,
 				31D8C53121CCF0570078BC66 /* AtomicInt.swift in Sources */,
+				31365BCE21F6183600148121 /* Error.swift in Sources */,
 				31D8C53C21CD199C0078BC66 /* RecursiveLock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
