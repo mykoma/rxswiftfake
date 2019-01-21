@@ -13,7 +13,7 @@ fileprivate final class AnonymousDisposable: DisposeBase, Cancelable {
     public typealias DisposeActiion = () -> Void
     
     private var _isDisposed = AtomicInt(0)
-    private var _disposeAction: DisposeActiion
+    private var _disposeAction: DisposeActiion?
     
     fileprivate init(_ disposeAction: @escaping DisposeActiion) {
         _disposeAction = disposeAction
@@ -25,7 +25,13 @@ fileprivate final class AnonymousDisposable: DisposeBase, Cancelable {
     }
     
     func dispose() {
-        
+        if _isDisposed.fetchOr(1) == 0 {
+            assert(_isDisposed.load() == 1)
+            if let action = _disposeAction {
+                _disposeAction = nil
+                action()
+            }
+        }
     }
     
 }
