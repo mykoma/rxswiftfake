@@ -29,6 +29,7 @@
 		31365BD321F6F30D00148121 /* WithLatestFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31365BD221F6F30D00148121 /* WithLatestFrom.swift */; };
 		31365BD521F70D0200148121 /* ToArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31365BD421F70D0200148121 /* ToArray.swift */; };
 		31365BD721F7147400148121 /* SwitchIfEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31365BD621F7147400148121 /* SwitchIfEmpty.swift */; };
+		31365BDD21F7539B00148121 /* Enumerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31365BDC21F7539B00148121 /* Enumerated.swift */; };
 		314B015021DA740F009B11F6 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B014F21DA740F009B11F6 /* Map.swift */; };
 		314B015721DB9D2A009B11F6 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B015621DB9D2A009B11F6 /* Merge.swift */; };
 		31608D1921D113C5003FCADA /* AsyncSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31608D1821D113C5003FCADA /* AsyncSubject.swift */; };
@@ -127,6 +128,7 @@
 		31365BD221F6F30D00148121 /* WithLatestFrom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithLatestFrom.swift; sourceTree = "<group>"; };
 		31365BD421F70D0200148121 /* ToArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToArray.swift; sourceTree = "<group>"; };
 		31365BD621F7147400148121 /* SwitchIfEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchIfEmpty.swift; sourceTree = "<group>"; };
+		31365BDC21F7539B00148121 /* Enumerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerated.swift; sourceTree = "<group>"; };
 		314B014F21DA740F009B11F6 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		314B015621DB9D2A009B11F6 /* Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
 		31608D1821D113C5003FCADA /* AsyncSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSubject.swift; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 				31365BD421F70D0200148121 /* ToArray.swift */,
 				31365BCB21F6127100148121 /* Using.swift */,
 				31365BD221F6F30D00148121 /* WithLatestFrom.swift */,
+				31365BDC21F7539B00148121 /* Enumerated.swift */,
 			);
 			path = Observables;
 			sourceTree = "<group>";
@@ -536,6 +539,7 @@
 				3161DF9921CB85D000185693 /* Observable.swift in Sources */,
 				3161DF9D21CB8AC500185693 /* ObservableType+Extensions.swift in Sources */,
 				31D8C54021CD199C0078BC66 /* Bag.swift in Sources */,
+				31365BDD21F7539B00148121 /* Enumerated.swift in Sources */,
 				3161DFAC21CBAB8600185693 /* Cancelable.swift in Sources */,
 				31123D8021E8E62A00DA280B /* SkipWhile.swift in Sources */,
 				3184572921EF7C8F0010CD1E /* DistinctUntilChanged.swift in Sources */,
