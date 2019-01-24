@@ -108,7 +108,7 @@ fileprivate final class CombineLatestObserver<SourceElementType>: ObserverType, 
         switch event {
         case .next(let value):
             _setLatestValue(value)
-        case .error(let error):
+        case .error:
             _dispose.dispose()
         case .completed:
             _dispose.dispose()
