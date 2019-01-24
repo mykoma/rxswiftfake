@@ -11,10 +11,19 @@ import Foundation
 class Producer<ElementType>: Observable<ElementType> {
     
     override func subscribe<O: ObserverType>(_ observer: O) -> Disposable where O.E == E {
-        let disposer = SinkDisposer()
-        let sinkAndSubscription = run(observer, cancel: disposer)
-        disposer.setSinkAndSubscription(sink: sinkAndSubscription.sink, subscription: sinkAndSubscription.subscription)
-        return disposer
+        if !CurrentThreadScheduler.isScheduleRequired {
+            let disposer = SinkDisposer()
+            let sinkAndSubscription = run(observer, cancel: disposer)
+            disposer.setSinkAndSubscription(sink: sinkAndSubscription.sink, subscription: sinkAndSubscription.subscription)
+            return disposer
+        } else {
+            return CurrentThreadScheduler.instance.schedule(()) { _ -> Disposable in
+                let disposer = SinkDisposer()
+                let sinkAndSubscription = self.run(observer, cancel: disposer)
+                disposer.setSinkAndSubscription(sink: sinkAndSubscription.sink, subscription: sinkAndSubscription.subscription)
+                return disposer
+            }
+        }
     }
     
     func run<O: ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == ElementType {

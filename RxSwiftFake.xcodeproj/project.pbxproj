@@ -86,6 +86,12 @@
 		31C8C74121F9B68D00CC698F /* SchedulePeriodicRecursive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C74021F9B68D00CC698F /* SchedulePeriodicRecursive.swift */; };
 		31C8C74321F9B75100CC698F /* RecursiveScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C74221F9B75100CC698F /* RecursiveScheduler.swift */; };
 		31C8C74821F9C22000CC698F /* DispatchQueueConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C74721F9C22000CC698F /* DispatchQueueConfiguration.swift */; };
+		31C8C74A21F9CAED00CC698F /* MainScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C74921F9CAED00CC698F /* MainScheduler.swift */; };
+		31C8C74C21F9EFFC00CC698F /* CurrentThreadScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C74B21F9EFFC00CC698F /* CurrentThreadScheduler.swift */; };
+		31C8C74E21F9F08D00CC698F /* RxMutableBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C74D21F9F08D00CC698F /* RxMutableBox.swift */; };
+		31C8C75221F9F16E00CC698F /* ScheduledItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C75121F9F16E00CC698F /* ScheduledItemType.swift */; };
+		31C8C75421F9F1D900CC698F /* InvocableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C75321F9F1D900CC698F /* InvocableType.swift */; };
+		31C8C75821F9FD9100CC698F /* ScheduledItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C75721F9FD9100CC698F /* ScheduledItem.swift */; };
 		31D8C53121CCF0570078BC66 /* AtomicInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53021CCF0570078BC66 /* AtomicInt.swift */; };
 		31D8C53C21CD199C0078BC66 /* RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53421CD199C0078BC66 /* RecursiveLock.swift */; };
 		31D8C53F21CD199C0078BC66 /* Bag+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53921CD199C0078BC66 /* Bag+Rx.swift */; };
@@ -202,6 +208,12 @@
 		31C8C74021F9B68D00CC698F /* SchedulePeriodicRecursive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePeriodicRecursive.swift; sourceTree = "<group>"; };
 		31C8C74221F9B75100CC698F /* RecursiveScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecursiveScheduler.swift; sourceTree = "<group>"; };
 		31C8C74721F9C22000CC698F /* DispatchQueueConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueConfiguration.swift; sourceTree = "<group>"; };
+		31C8C74921F9CAED00CC698F /* MainScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScheduler.swift; sourceTree = "<group>"; };
+		31C8C74B21F9EFFC00CC698F /* CurrentThreadScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentThreadScheduler.swift; sourceTree = "<group>"; };
+		31C8C74D21F9F08D00CC698F /* RxMutableBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMutableBox.swift; sourceTree = "<group>"; };
+		31C8C75121F9F16E00CC698F /* ScheduledItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledItemType.swift; sourceTree = "<group>"; };
+		31C8C75321F9F1D900CC698F /* InvocableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvocableType.swift; sourceTree = "<group>"; };
+		31C8C75721F9FD9100CC698F /* ScheduledItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledItem.swift; sourceTree = "<group>"; };
 		31D8C53021CCF0570078BC66 /* AtomicInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicInt.swift; sourceTree = "<group>"; };
 		31D8C53221CCF0800078BC66 /* RxAtomic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxAtomic.h; sourceTree = "<group>"; };
 		31D8C53321CCF35A0078BC66 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
@@ -307,10 +319,10 @@
 		3161DF7121CB59EE00185693 /* RxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				31C8C75521F9F6BB00CC698F /* Platform */,
 				31D8C53221CCF0800078BC66 /* RxAtomic.h */,
 				3161DFA521CBA89200185693 /* AnonymousObserver.swift */,
 				31D8C54F21CF38840078BC66 /* AnyObserver.swift */,
-				31D8C53021CCF0570078BC66 /* AtomicInt.swift */,
 				31D8C54721CD26D00078BC66 /* Errors.swift */,
 				3161DF9221CB856100185693 /* Event.swift */,
 				3184573221F082EC0010CD1E /* GroupedObservable.swift */,
@@ -321,12 +333,10 @@
 				3161DF9C21CB8AC500185693 /* ObservableType+Extensions.swift */,
 				3161DF9E21CB8D0400185693 /* ObserverBase.swift */,
 				3161DF9A21CB864400185693 /* ObserverType.swift */,
-				3161DFA021CB8DE400185693 /* Platform.Darwin.swift */,
-				31D8C53421CD199C0078BC66 /* RecursiveLock.swift */,
 				3161DF8C21CB816200185693 /* Rx.swift */,
+				31C8C74D21F9F08D00CC698F /* RxMutableBox.swift */,
 				31C8C73E21F9B43500CC698F /* SchedulerType.swift */,
 				31D8C54421CD239E0078BC66 /* Concurrency */,
-				31D8C53821CD199C0078BC66 /* DataStructures */,
 				3161DFB121CBCBF600185693 /* Disposables */,
 				31365BE221F8128400148121 /* Extensions */,
 				316E193621D78DBF00F93550 /* Observables */,
@@ -402,10 +412,12 @@
 		31C8C73B21F9ADDF00CC698F /* Schedulers */ = {
 			isa = PBXGroup;
 			children = (
-				31C8C74621F9C20900CC698F /* Internal */,
 				31C8C73C21F9AE0A00CC698F /* ConcurrentDispatchQueueScheduler.swift */,
-				31C8C74021F9B68D00CC698F /* SchedulePeriodicRecursive.swift */,
+				31C8C74B21F9EFFC00CC698F /* CurrentThreadScheduler.swift */,
+				31C8C74921F9CAED00CC698F /* MainScheduler.swift */,
 				31C8C74221F9B75100CC698F /* RecursiveScheduler.swift */,
+				31C8C74021F9B68D00CC698F /* SchedulePeriodicRecursive.swift */,
+				31C8C74621F9C20900CC698F /* Internal */,
 			);
 			path = Schedulers;
 			sourceTree = "<group>";
@@ -414,8 +426,31 @@
 			isa = PBXGroup;
 			children = (
 				31C8C74721F9C22000CC698F /* DispatchQueueConfiguration.swift */,
+				31C8C75321F9F1D900CC698F /* InvocableType.swift */,
+				31C8C75721F9FD9100CC698F /* ScheduledItem.swift */,
+				31C8C75121F9F16E00CC698F /* ScheduledItemType.swift */,
 			);
 			path = Internal;
+			sourceTree = "<group>";
+		};
+		31C8C75521F9F6BB00CC698F /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				31C8C75621F9F74300CC698F /* DataStructures */,
+				31D8C53421CD199C0078BC66 /* RecursiveLock.swift */,
+				31D8C53021CCF0570078BC66 /* AtomicInt.swift */,
+				3161DFA021CB8DE400185693 /* Platform.Darwin.swift */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		31C8C75621F9F74300CC698F /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				31D8C53A21CD199C0078BC66 /* Bag.swift */,
+				31608D3421D27251003FCADA /* Queue.swift */,
+			);
+			path = DataStructures;
 			sourceTree = "<group>";
 		};
 		31D8C53521CD199C0078BC66 /* Subject */ = {
@@ -428,15 +463,6 @@
 				31D8C54921CF38750078BC66 /* SubjectType.swift */,
 			);
 			path = Subject;
-			sourceTree = "<group>";
-		};
-		31D8C53821CD199C0078BC66 /* DataStructures */ = {
-			isa = PBXGroup;
-			children = (
-				31D8C53A21CD199C0078BC66 /* Bag.swift */,
-				31608D3421D27251003FCADA /* Queue.swift */,
-			);
-			path = DataStructures;
 			sourceTree = "<group>";
 		};
 		31D8C54421CD239E0078BC66 /* Concurrency */ = {
@@ -588,9 +614,11 @@
 				31123D7521E7972C00DA280B /* TakeLast.swift in Sources */,
 				3184570E21EDF2660010CD1E /* StartWith.swift in Sources */,
 				3161DFA621CBA89200185693 /* AnonymousObserver.swift in Sources */,
+				31C8C74C21F9EFFC00CC698F /* CurrentThreadScheduler.swift in Sources */,
 				31C8C73521F9A7DF00CC698F /* SubscribeOn.swift in Sources */,
 				31123D7E21E8968A00DA280B /* SkipUntil.swift in Sources */,
 				3184EE0721DFA0FA0096D597 /* CompositeDisposable.swift in Sources */,
+				31C8C75821F9FD9100CC698F /* ScheduledItem.swift in Sources */,
 				3184572521EF33250010CD1E /* Sample.swift in Sources */,
 				31D8C55021CF38840078BC66 /* AnyObserver.swift in Sources */,
 				31123D6C21E5F5F400DA280B /* Create.swift in Sources */,
@@ -598,6 +626,7 @@
 				31C8C73D21F9AE0A00CC698F /* ConcurrentDispatchQueueScheduler.swift in Sources */,
 				3161DF9D21CB8AC500185693 /* ObservableType+Extensions.swift in Sources */,
 				31D8C54021CD199C0078BC66 /* Bag.swift in Sources */,
+				31C8C74E21F9F08D00CC698F /* RxMutableBox.swift in Sources */,
 				31365BDD21F7539B00148121 /* Enumerated.swift in Sources */,
 				3161DFAC21CBAB8600185693 /* Cancelable.swift in Sources */,
 				31C8C73F21F9B43500CC698F /* SchedulerType.swift in Sources */,
@@ -619,6 +648,7 @@
 				31C8C74821F9C22000CC698F /* DispatchQueueConfiguration.swift in Sources */,
 				3161DFAA21CBAB5E00185693 /* DisposeBase.swift in Sources */,
 				31123D7A21E87FB500DA280B /* TakeWhile.swift in Sources */,
+				31C8C74A21F9CAED00CC698F /* MainScheduler.swift in Sources */,
 				31D8C54C21CF38760078BC66 /* BehaviorSubject.swift in Sources */,
 				31365BC921F5AC7E00148121 /* SerialDisposable.swift in Sources */,
 				31365B9621F0C7BC00148121 /* RefCountDisposable.swift in Sources */,
@@ -633,6 +663,7 @@
 				31365BD521F70D0200148121 /* ToArray.swift in Sources */,
 				31C8C73721F9A82200CC698F /* ImmediateSchedulerType.swift in Sources */,
 				31123D6621E49C0A00DA280B /* SynchronizedOnType.swift in Sources */,
+				31C8C75421F9F1D900CC698F /* InvocableType.swift in Sources */,
 				3184572721EF727C0010CD1E /* Defered.swift in Sources */,
 				3161DFB321CBCCAE00185693 /* BinaryDisposable.swift in Sources */,
 				31D8C55621D0A04D0078BC66 /* PublishSubject.swift in Sources */,
@@ -640,6 +671,7 @@
 				3184571021EE229C0010CD1E /* ElementAt.swift in Sources */,
 				3161DFA121CB8DE400185693 /* Platform.Darwin.swift in Sources */,
 				31365BC721F5968400148121 /* Switch.swift in Sources */,
+				31C8C75221F9F16E00CC698F /* ScheduledItemType.swift in Sources */,
 				31365BDF21F770E900148121 /* Do.swift in Sources */,
 				31123D7321E780DC00DA280B /* Empty.swift in Sources */,
 				31123D7C21E887EF00DA280B /* Skip.swift in Sources */,
