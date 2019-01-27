@@ -94,6 +94,7 @@
 		31C8C75821F9FD9100CC698F /* ScheduledItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C75721F9FD9100CC698F /* ScheduledItem.swift */; };
 		31C8C9D521FB539800CC698F /* ObserveOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C9D421FB539800CC698F /* ObserveOn.swift */; };
 		31C8C9D721FBFB8C00CC698F /* SerialDispatchQueueScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C9D621FBFB8C00CC698F /* SerialDispatchQueueScheduler.swift */; };
+		31C8C9D921FDDA4F00CC698F /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C9D821FDDA4F00CC698F /* DispatchQueue+Extensions.swift */; };
 		31D8C53121CCF0570078BC66 /* AtomicInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53021CCF0570078BC66 /* AtomicInt.swift */; };
 		31D8C53C21CD199C0078BC66 /* RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53421CD199C0078BC66 /* RecursiveLock.swift */; };
 		31D8C53F21CD199C0078BC66 /* Bag+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53921CD199C0078BC66 /* Bag+Rx.swift */; };
@@ -218,6 +219,7 @@
 		31C8C75721F9FD9100CC698F /* ScheduledItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledItem.swift; sourceTree = "<group>"; };
 		31C8C9D421FB539800CC698F /* ObserveOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveOn.swift; sourceTree = "<group>"; };
 		31C8C9D621FBFB8C00CC698F /* SerialDispatchQueueScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialDispatchQueueScheduler.swift; sourceTree = "<group>"; };
+		31C8C9D821FDDA4F00CC698F /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
 		31D8C53021CCF0570078BC66 /* AtomicInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicInt.swift; sourceTree = "<group>"; };
 		31D8C53221CCF0800078BC66 /* RxAtomic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxAtomic.h; sourceTree = "<group>"; };
 		31D8C53321CCF35A0078BC66 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
@@ -446,6 +448,7 @@
 				31D8C53421CD199C0078BC66 /* RecursiveLock.swift */,
 				31D8C53021CCF0570078BC66 /* AtomicInt.swift */,
 				3161DFA021CB8DE400185693 /* Platform.Darwin.swift */,
+				31C8C9D821FDDA4F00CC698F /* DispatchQueue+Extensions.swift */,
 			);
 			path = Platform;
 			sourceTree = "<group>";
@@ -668,6 +671,7 @@
 				3184570C21EDEB400010CD1E /* Never.swift in Sources */,
 				31365BBA21F4B83100148121 /* DefaultIfEmpty.swift in Sources */,
 				31608D1921D113C5003FCADA /* AsyncSubject.swift in Sources */,
+				31C8C9D921FDDA4F00CC698F /* DispatchQueue+Extensions.swift in Sources */,
 				31365BD521F70D0200148121 /* ToArray.swift in Sources */,
 				31C8C73721F9A82200CC698F /* ImmediateSchedulerType.swift in Sources */,
 				31123D6621E49C0A00DA280B /* SynchronizedOnType.swift in Sources */,
