@@ -96,6 +96,7 @@
 		31C8C9D721FBFB8C00CC698F /* SerialDispatchQueueScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C9D621FBFB8C00CC698F /* SerialDispatchQueueScheduler.swift */; };
 		31C8C9D921FDDA4F00CC698F /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C9D821FDDA4F00CC698F /* DispatchQueue+Extensions.swift */; };
 		31C8C9DB21FDE5B300CC698F /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C9DA21FDE5B300CC698F /* Buffer.swift */; };
+		31C8C9DF21FF569800CC698F /* Just.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C9DE21FF569800CC698F /* Just.swift */; };
 		31D8C53121CCF0570078BC66 /* AtomicInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53021CCF0570078BC66 /* AtomicInt.swift */; };
 		31D8C53C21CD199C0078BC66 /* RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53421CD199C0078BC66 /* RecursiveLock.swift */; };
 		31D8C53F21CD199C0078BC66 /* Bag+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53921CD199C0078BC66 /* Bag+Rx.swift */; };
@@ -222,6 +223,7 @@
 		31C8C9D621FBFB8C00CC698F /* SerialDispatchQueueScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialDispatchQueueScheduler.swift; sourceTree = "<group>"; };
 		31C8C9D821FDDA4F00CC698F /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
 		31C8C9DA21FDE5B300CC698F /* Buffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buffer.swift; sourceTree = "<group>"; };
+		31C8C9DE21FF569800CC698F /* Just.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Just.swift; sourceTree = "<group>"; };
 		31D8C53021CCF0570078BC66 /* AtomicInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicInt.swift; sourceTree = "<group>"; };
 		31D8C53221CCF0800078BC66 /* RxAtomic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxAtomic.h; sourceTree = "<group>"; };
 		31D8C53321CCF35A0078BC66 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
@@ -392,6 +394,7 @@
 				31365BCD21F6183600148121 /* Error.swift */,
 				316E193921D78DBF00F93550 /* Filter.swift */,
 				3184573021F081DF0010CD1E /* GroupBy.swift */,
+				31C8C9DE21FF569800CC698F /* Just.swift */,
 				314B014F21DA740F009B11F6 /* Map.swift */,
 				314B015621DB9D2A009B11F6 /* Merge.swift */,
 				3184570B21EDEB400010CD1E /* Never.swift */,
@@ -694,6 +697,7 @@
 				3161DFB021CBAE9C00185693 /* NopDisposable.swift in Sources */,
 				31123D8421EB778100DA280B /* Reduce.swift in Sources */,
 				316E193C21D78DBF00F93550 /* Filter.swift in Sources */,
+				31C8C9DF21FF569800CC698F /* Just.swift in Sources */,
 				31123D6421E4937000DA280B /* LockOwnerType.swift in Sources */,
 				316E193A21D78DBF00F93550 /* Producer.swift in Sources */,
 				31AFF68D21EDD08E003CF665 /* Amb.swift in Sources */,
