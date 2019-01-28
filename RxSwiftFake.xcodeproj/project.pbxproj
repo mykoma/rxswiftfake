@@ -95,6 +95,7 @@
 		31C8C9D521FB539800CC698F /* ObserveOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C9D421FB539800CC698F /* ObserveOn.swift */; };
 		31C8C9D721FBFB8C00CC698F /* SerialDispatchQueueScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C9D621FBFB8C00CC698F /* SerialDispatchQueueScheduler.swift */; };
 		31C8C9D921FDDA4F00CC698F /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C9D821FDDA4F00CC698F /* DispatchQueue+Extensions.swift */; };
+		31C8C9DB21FDE5B300CC698F /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C8C9DA21FDE5B300CC698F /* Buffer.swift */; };
 		31D8C53121CCF0570078BC66 /* AtomicInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53021CCF0570078BC66 /* AtomicInt.swift */; };
 		31D8C53C21CD199C0078BC66 /* RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53421CD199C0078BC66 /* RecursiveLock.swift */; };
 		31D8C53F21CD199C0078BC66 /* Bag+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C53921CD199C0078BC66 /* Bag+Rx.swift */; };
@@ -220,6 +221,7 @@
 		31C8C9D421FB539800CC698F /* ObserveOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveOn.swift; sourceTree = "<group>"; };
 		31C8C9D621FBFB8C00CC698F /* SerialDispatchQueueScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialDispatchQueueScheduler.swift; sourceTree = "<group>"; };
 		31C8C9D821FDDA4F00CC698F /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
+		31C8C9DA21FDE5B300CC698F /* Buffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buffer.swift; sourceTree = "<group>"; };
 		31D8C53021CCF0570078BC66 /* AtomicInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicInt.swift; sourceTree = "<group>"; };
 		31D8C53221CCF0800078BC66 /* RxAtomic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxAtomic.h; sourceTree = "<group>"; };
 		31D8C53321CCF35A0078BC66 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 			isa = PBXGroup;
 			children = (
 				31AFF68C21EDD08E003CF665 /* Amb.swift */,
+				31C8C9DA21FDE5B300CC698F /* Buffer.swift */,
 				31365BB421F1DB8500148121 /* CombineLatest.swift */,
 				31123D6B21E5F5F400DA280B /* Create.swift */,
 				31365BE021F8100F00148121 /* Debug.swift */,
@@ -639,6 +642,7 @@
 				31C8C74E21F9F08D00CC698F /* RxMutableBox.swift in Sources */,
 				31365BDD21F7539B00148121 /* Enumerated.swift in Sources */,
 				3161DFAC21CBAB8600185693 /* Cancelable.swift in Sources */,
+				31C8C9DB21FDE5B300CC698F /* Buffer.swift in Sources */,
 				31C8C73F21F9B43500CC698F /* SchedulerType.swift in Sources */,
 				31123D8021E8E62A00DA280B /* SkipWhile.swift in Sources */,
 				3184572921EF7C8F0010CD1E /* DistinctUntilChanged.swift in Sources */,

@@ -8,12 +8,12 @@
 
 import Foundation
 
-final class MainSchduler: SerialDispatchQueueScheduler {
+final class MainScheduler: SerialDispatchQueueScheduler {
     
     private let _mainQueue: DispatchQueue
     var numberEnqueued = AtomicInt(0)
     
-    static let instance = MainSchduler()
+    static let instance = MainScheduler()
     
     static let asyncInstance = SerialDispatchQueueScheduler(serialQueue: DispatchQueue.main)
     
