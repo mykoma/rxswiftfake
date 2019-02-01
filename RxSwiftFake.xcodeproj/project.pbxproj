@@ -67,6 +67,7 @@
 		316354E3220437CA00CCBD0B /* AsyncLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316354E2220437CA00CCBD0B /* AsyncLock.swift */; };
 		316354E52204380A00CCBD0B /* SynchronizedDisposeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316354E42204380A00CCBD0B /* SynchronizedDisposeType.swift */; };
 		316354E722043FF900CCBD0B /* InvocableScheduledItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316354E622043FF900CCBD0B /* InvocableScheduledItem.swift */; };
+		316354E922044D0B00CCBD0B /* InfiniteSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316354E822044D0B00CCBD0B /* InfiniteSequence.swift */; };
 		316E193A21D78DBF00F93550 /* Producer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316E193721D78DBF00F93550 /* Producer.swift */; };
 		316E193B21D78DBF00F93550 /* Sink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316E193821D78DBF00F93550 /* Sink.swift */; };
 		316E193C21D78DBF00F93550 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316E193921D78DBF00F93550 /* Filter.swift */; };
@@ -200,6 +201,7 @@
 		316354E2220437CA00CCBD0B /* AsyncLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLock.swift; sourceTree = "<group>"; };
 		316354E42204380A00CCBD0B /* SynchronizedDisposeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedDisposeType.swift; sourceTree = "<group>"; };
 		316354E622043FF900CCBD0B /* InvocableScheduledItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvocableScheduledItem.swift; sourceTree = "<group>"; };
+		316354E822044D0B00CCBD0B /* InfiniteSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteSequence.swift; sourceTree = "<group>"; };
 		316E193721D78DBF00F93550 /* Producer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Producer.swift; sourceTree = "<group>"; };
 		316E193821D78DBF00F93550 /* Sink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sink.swift; sourceTree = "<group>"; };
 		316E193921D78DBF00F93550 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
@@ -495,6 +497,7 @@
 			isa = PBXGroup;
 			children = (
 				31D8C53A21CD199C0078BC66 /* Bag.swift */,
+				316354E822044D0B00CCBD0B /* InfiniteSequence.swift */,
 				31608D3421D27251003FCADA /* Queue.swift */,
 			);
 			path = DataStructures;
@@ -684,6 +687,7 @@
 				316354DA2204263E00CCBD0B /* TailRecursiveSink.swift in Sources */,
 				31123D8021E8E62A00DA280B /* SkipWhile.swift in Sources */,
 				3184572921EF7C8F0010CD1E /* DistinctUntilChanged.swift in Sources */,
+				316354E922044D0B00CCBD0B /* InfiniteSequence.swift in Sources */,
 				314B015021DA740F009B11F6 /* Map.swift in Sources */,
 				3184EE0521DF94B50096D597 /* SingleAssignmentDisposable.swift in Sources */,
 				3161DF9521CB859A00185693 /* ObservableConvertibleType.swift in Sources */,

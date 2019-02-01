@@ -28,6 +28,18 @@ extension ObservableType {
     
 }
 
+extension ObservableType {
+    
+    func retry() -> Observable<E> {
+        return CatchSequence(source: InfiniteSequence(repeatedValue: asObservable()))
+    }
+    
+    func retry(_ maxAttemptCount: Int) -> Observable<E> {
+        return CatchSequence(source: repeatElement(asObservable(), count: maxAttemptCount))
+    }
+
+}
+
 fileprivate final class Catch<ElementType>: Producer<ElementType> {
     
     typealias Handler = (Error) throws -> Observable<ElementType>
