@@ -8,31 +8,31 @@
 
 import Foundation
 
-class Sink<O: ObserverType>: Cancelable {
+class Sink<O: ObserverType>: Disposable {
     
     fileprivate let _observer: O
     fileprivate let _cancel: Cancelable
     
-    var _isDisposed: Bool
-    var isDisposed: Bool {
-        return _isDisposed
+    var _disposed: Bool
+    final var disposed: Bool {
+        return _disposed
     }
     
     init(observer: O, cancel: Cancelable) {
         _observer = observer
         _cancel = cancel
-        _isDisposed = false
+        _disposed = false
     }
     
     final func forwardOn(_ event: Event<O.E>) {
-        if isDisposed {
+        if _disposed {
             return
         }
         _observer.on(event)
     }
     
     func dispose() {
-        _isDisposed = true
+        _disposed = true
         _cancel.dispose()
     }
     

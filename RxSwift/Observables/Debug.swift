@@ -94,7 +94,7 @@ fileprivate final class DebugSink<ElementType, O: ObserverType>: Sink<O>, Observ
     }
     
     override func dispose() {
-        if !self.isDisposed {
+        if !self.disposed {
             logEvent(_parent._identifier, dateFormat: _timestampFormatter, content: "disposed")
         }
         super.dispose()
