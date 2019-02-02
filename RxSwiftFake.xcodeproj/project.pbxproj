@@ -70,6 +70,7 @@
 		316354EB2204878200CCBD0B /* AddRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316354EA2204878200CCBD0B /* AddRef.swift */; };
 		316354ED22048CAB00CCBD0B /* RefCountDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316354EC22048CAB00CCBD0B /* RefCountDisposable.swift */; };
 		316354F1220496D600CCBD0B /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316354F0220496D600CCBD0B /* Window.swift */; };
+		316354F722056ED000CCBD0B /* Debounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316354F622056ED000CCBD0B /* Debounce.swift */; };
 		316E193A21D78DBF00F93550 /* Producer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316E193721D78DBF00F93550 /* Producer.swift */; };
 		316E193B21D78DBF00F93550 /* Sink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316E193821D78DBF00F93550 /* Sink.swift */; };
 		316E193C21D78DBF00F93550 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316E193921D78DBF00F93550 /* Filter.swift */; };
@@ -206,6 +207,7 @@
 		316354EA2204878200CCBD0B /* AddRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRef.swift; sourceTree = "<group>"; };
 		316354EC22048CAB00CCBD0B /* RefCountDisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RefCountDisposable.swift; path = ../../../../workspace/K1/King/Pods/RxSwift/RxSwift/Disposables/RefCountDisposable.swift; sourceTree = "<group>"; };
 		316354F0220496D600CCBD0B /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		316354F622056ED000CCBD0B /* Debounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debounce.swift; sourceTree = "<group>"; };
 		316E193721D78DBF00F93550 /* Producer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Producer.swift; sourceTree = "<group>"; };
 		316E193821D78DBF00F93550 /* Sink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sink.swift; sourceTree = "<group>"; };
 		316E193921D78DBF00F93550 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
@@ -421,6 +423,7 @@
 				31C8C9E021FF5DBB00CC698F /* Catch.swift */,
 				31365BB421F1DB8500148121 /* CombineLatest.swift */,
 				31123D6B21E5F5F400DA280B /* Create.swift */,
+				316354F622056ED000CCBD0B /* Debounce.swift */,
 				31365BE021F8100F00148121 /* Debug.swift */,
 				31365BB921F4B83100148121 /* DefaultIfEmpty.swift */,
 				3184572621EF727C0010CD1E /* Defered.swift */,
@@ -675,6 +678,7 @@
 				3161DFA621CBA89200185693 /* AnonymousObserver.swift in Sources */,
 				31C8C74C21F9EFFC00CC698F /* CurrentThreadScheduler.swift in Sources */,
 				31C8C73521F9A7DF00CC698F /* SubscribeOn.swift in Sources */,
+				316354F722056ED000CCBD0B /* Debounce.swift in Sources */,
 				31123D7E21E8968A00DA280B /* SkipUntil.swift in Sources */,
 				3184EE0721DFA0FA0096D597 /* CompositeDisposable.swift in Sources */,
 				31C8C75821F9FD9100CC698F /* ScheduledItem.swift in Sources */,
