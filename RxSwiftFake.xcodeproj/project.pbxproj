@@ -123,6 +123,7 @@
 		31D8C55221CF38910078BC66 /* SubscriptionDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C55121CF38910078BC66 /* SubscriptionDisposable.swift */; };
 		31D8C55621D0A04D0078BC66 /* PublishSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C55521D0A04D0078BC66 /* PublishSubject.swift */; };
 		31E49CD92206911C008573AE /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E49CD82206911C008573AE /* Range.swift */; };
+		31E49CDB2206972E008573AE /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E49CDA2206972E008573AE /* Repeat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -267,6 +268,7 @@
 		31D8C55121CF38910078BC66 /* SubscriptionDisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionDisposable.swift; sourceTree = "<group>"; };
 		31D8C55521D0A04D0078BC66 /* PublishSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishSubject.swift; sourceTree = "<group>"; };
 		31E49CD82206911C008573AE /* Range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Range.swift; sourceTree = "<group>"; };
+		31E49CDA2206972E008573AE /* Repeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repeat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -457,6 +459,7 @@
 				316E193721D78DBF00F93550 /* Producer.swift */,
 				31E49CD82206911C008573AE /* Range.swift */,
 				31123D8321EB778100DA280B /* Reduce.swift */,
+				31E49CDA2206972E008573AE /* Repeat.swift */,
 				3184572421EF33250010CD1E /* Sample.swift */,
 				317CDD2021EC9740002A9E78 /* Scan.swift */,
 				316E193821D78DBF00F93550 /* Sink.swift */,
@@ -691,6 +694,7 @@
 				31123D7521E7972C00DA280B /* TakeLast.swift in Sources */,
 				31C8C9D521FB539800CC698F /* ObserveOn.swift in Sources */,
 				3184570E21EDF2660010CD1E /* StartWith.swift in Sources */,
+				31E49CDB2206972E008573AE /* Repeat.swift in Sources */,
 				3161DFA621CBA89200185693 /* AnonymousObserver.swift in Sources */,
 				31C8C74C21F9EFFC00CC698F /* CurrentThreadScheduler.swift in Sources */,
 				31C8C73521F9A7DF00CC698F /* SubscribeOn.swift in Sources */,

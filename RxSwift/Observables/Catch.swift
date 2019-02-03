@@ -35,7 +35,7 @@ extension ObservableType {
     }
     
     func retry(_ maxAttemptCount: Int) -> Observable<E> {
-        return CatchSequence(source: repeatElement(asObservable(), count: maxAttemptCount))
+        return CatchSequence(source: Swift.repeatElement(asObservable(), count: maxAttemptCount))
     }
 
 }
