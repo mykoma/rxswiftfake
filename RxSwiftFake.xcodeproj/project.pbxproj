@@ -125,6 +125,7 @@
 		31E49CD92206911C008573AE /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E49CD82206911C008573AE /* Range.swift */; };
 		31E49CDB2206972E008573AE /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E49CDA2206972E008573AE /* Repeat.swift */; };
 		31E49CDD2206A0CC008573AE /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E49CDC2206A0CC008573AE /* Sequence.swift */; };
+		31E49CE0220735DC008573AE /* SingleAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E49CDF220735DC008573AE /* SingleAsync.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -271,6 +272,7 @@
 		31E49CD82206911C008573AE /* Range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Range.swift; sourceTree = "<group>"; };
 		31E49CDA2206972E008573AE /* Repeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repeat.swift; sourceTree = "<group>"; };
 		31E49CDC2206A0CC008573AE /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		31E49CDF220735DC008573AE /* SingleAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAsync.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -465,6 +467,7 @@
 				3184572421EF33250010CD1E /* Sample.swift */,
 				317CDD2021EC9740002A9E78 /* Scan.swift */,
 				31E49CDC2206A0CC008573AE /* Sequence.swift */,
+				31E49CDF220735DC008573AE /* SingleAsync.swift */,
 				316E193821D78DBF00F93550 /* Sink.swift */,
 				31123D7B21E887EF00DA280B /* Skip.swift */,
 				31123D7D21E8968A00DA280B /* SkipUntil.swift */,
@@ -801,6 +804,7 @@
 				316354E12204356E00CCBD0B /* SwiftSupport.swift in Sources */,
 				316354E3220437CA00CCBD0B /* AsyncLock.swift in Sources */,
 				31C8C74321F9B75100CC698F /* RecursiveScheduler.swift in Sources */,
+				31E49CE0220735DC008573AE /* SingleAsync.swift in Sources */,
 				31D8C53C21CD199C0078BC66 /* RecursiveLock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
