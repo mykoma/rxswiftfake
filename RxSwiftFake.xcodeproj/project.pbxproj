@@ -122,6 +122,7 @@
 		31D8C55021CF38840078BC66 /* AnyObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C54F21CF38840078BC66 /* AnyObserver.swift */; };
 		31D8C55221CF38910078BC66 /* SubscriptionDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C55121CF38910078BC66 /* SubscriptionDisposable.swift */; };
 		31D8C55621D0A04D0078BC66 /* PublishSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C55521D0A04D0078BC66 /* PublishSubject.swift */; };
+		31E49CD92206911C008573AE /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E49CD82206911C008573AE /* Range.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,6 +266,7 @@
 		31D8C54F21CF38840078BC66 /* AnyObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyObserver.swift; sourceTree = "<group>"; };
 		31D8C55121CF38910078BC66 /* SubscriptionDisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionDisposable.swift; sourceTree = "<group>"; };
 		31D8C55521D0A04D0078BC66 /* PublishSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishSubject.swift; sourceTree = "<group>"; };
+		31E49CD82206911C008573AE /* Range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Range.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -453,6 +455,7 @@
 				31C8C9D421FB539800CC698F /* ObserveOn.swift */,
 				316355012205F34F00CCBD0B /* Optional.swift */,
 				316E193721D78DBF00F93550 /* Producer.swift */,
+				31E49CD82206911C008573AE /* Range.swift */,
 				31123D8321EB778100DA280B /* Reduce.swift */,
 				3184572421EF33250010CD1E /* Sample.swift */,
 				317CDD2021EC9740002A9E78 /* Scan.swift */,
@@ -749,6 +752,7 @@
 				31123D6621E49C0A00DA280B /* SynchronizedOnType.swift in Sources */,
 				316354E722043FF900CCBD0B /* InvocableScheduledItem.swift in Sources */,
 				31C8C75421F9F1D900CC698F /* InvocableType.swift in Sources */,
+				31E49CD92206911C008573AE /* Range.swift in Sources */,
 				3184572721EF727C0010CD1E /* Defered.swift in Sources */,
 				3161DFB321CBCCAE00185693 /* BinaryDisposable.swift in Sources */,
 				31D8C55621D0A04D0078BC66 /* PublishSubject.swift in Sources */,
