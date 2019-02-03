@@ -124,6 +124,7 @@
 		31D8C55621D0A04D0078BC66 /* PublishSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D8C55521D0A04D0078BC66 /* PublishSubject.swift */; };
 		31E49CD92206911C008573AE /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E49CD82206911C008573AE /* Range.swift */; };
 		31E49CDB2206972E008573AE /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E49CDA2206972E008573AE /* Repeat.swift */; };
+		31E49CDD2206A0CC008573AE /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E49CDC2206A0CC008573AE /* Sequence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -269,6 +270,7 @@
 		31D8C55521D0A04D0078BC66 /* PublishSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishSubject.swift; sourceTree = "<group>"; };
 		31E49CD82206911C008573AE /* Range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Range.swift; sourceTree = "<group>"; };
 		31E49CDA2206972E008573AE /* Repeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repeat.swift; sourceTree = "<group>"; };
+		31E49CDC2206A0CC008573AE /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -462,6 +464,7 @@
 				31E49CDA2206972E008573AE /* Repeat.swift */,
 				3184572421EF33250010CD1E /* Sample.swift */,
 				317CDD2021EC9740002A9E78 /* Scan.swift */,
+				31E49CDC2206A0CC008573AE /* Sequence.swift */,
 				316E193821D78DBF00F93550 /* Sink.swift */,
 				31123D7B21E887EF00DA280B /* Skip.swift */,
 				31123D7D21E8968A00DA280B /* SkipUntil.swift */,
@@ -714,6 +717,7 @@
 				3161DFAC21CBAB8600185693 /* Cancelable.swift in Sources */,
 				31C8C9DB21FDE5B300CC698F /* Buffer.swift in Sources */,
 				31C8C73F21F9B43500CC698F /* SchedulerType.swift in Sources */,
+				31E49CDD2206A0CC008573AE /* Sequence.swift in Sources */,
 				316354FC22059FFE00CCBD0B /* DelaySubscription.swift in Sources */,
 				316354DA2204263E00CCBD0B /* TailRecursiveSink.swift in Sources */,
 				31123D8021E8E62A00DA280B /* SkipWhile.swift in Sources */,
