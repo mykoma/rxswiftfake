@@ -8,13 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    
+    var count: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+//        RxExample.testAmb1()
+//        RxExample.testAmb2()
+//        RxExample.testAmb3()
+//        
+//        RxExample.testBuffer()
+//        RxExample.testRange()
+//        RxExample.testRepeat()
+        RxExample.testStart()
     }
 
-
 }
-
