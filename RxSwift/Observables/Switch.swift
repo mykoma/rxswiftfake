@@ -44,38 +44,69 @@ fileprivate class SwitchSink<SourceElementType, S: ObservableConvertibleType, O:
     
     typealias E = SourceElementType
     
-    fileprivate let _subscription = SingleAssignmentDisposable()
+    fileprivate let _subscriptions = SingleAssignmentDisposable()
     fileprivate let _innerSubscription = SerialDisposable()
+    
+    let _lock = RecursiveLock()
+    
+    // state
+    fileprivate var _stopped = false
+    fileprivate var _latest = 0
+    fileprivate var _hasLatest = false
     
     func performMap(_ element: SourceElementType) throws -> S {
         rxAbstractMethod()
     }
     
+    @inline(__always)
+    final private func nextElementArrived(element: E) -> (Int, Observable<S.E>)? {
+        _lock.lock(); defer { _lock.unlock() } // {
+        do {
+            let observable = try performMap(element).asObservable()
+            _hasLatest = true
+            _latest = _latest &+ 1
+            return (_latest, observable)
+        }
+        catch let error {
+            forwardOn(.error(error))
+            dispose()
+        }
+        
+        return nil
+        // }
+    }
+    
     func on(_ event: Event<E>) {
         switch event {
-        case .next(let value):
-            do {
-                let observable = try performMap(value)
-                let sinkIter = SwitchSinkIter(parent: self)
-                let subscription = observable.asObservable().subscribe(sinkIter)
-                _innerSubscription.disposable = subscription
-            } catch let e {
-                forwardOn(.error(e))
-                dispose()
+        case .next(let element):
+            if let (latest, observable) = nextElementArrived(element: element) {
+                let d = SingleAssignmentDisposable()
+                _innerSubscription.disposable = d
+                
+                let observer = SwitchSinkIter(parent: self, id: latest, _self: d)
+                let disposable = observable.subscribe(observer)
+                d.setDisposable(disposable)
             }
         case .error(let e):
             forwardOn(.error(e))
             dispose()
         case .completed:
-            forwardOn(.completed)
-            dispose()
+            _lock.lock(); defer { _lock.unlock() }
+            _stopped = true
+            
+            _subscriptions.dispose()
+            
+            if !_hasLatest {
+                forwardOn(.completed)
+                dispose()
+            }
         }
     }
     
     func run(_ source: Observable<SourceElementType>) -> Disposable {
         let subscrption = source.subscribe(self)
-        _subscription.setDisposable(subscrption)
-        return Disposables.create(_subscription, _innerSubscription)
+        _subscriptions.setDisposable(subscrption)
+        return Disposables.create(_subscriptions, _innerSubscription)
     }
     
 }
@@ -93,17 +124,27 @@ fileprivate final class SwitchSinkIter<SourceElementType, S: ObservableConvertib
     typealias Parent = SwitchSink<SourceElementType, S, O>
 
     fileprivate let _parent: Parent
-
-    init(parent: Parent) {
+    fileprivate let _id: Int
+    fileprivate let _self: Disposable
+    
+    init(parent: Parent, id: Int, _self: Disposable) {
         _parent = parent
+        _id = id
+        self._self = _self
     }
 
     func on(_ event: Event<O.E>) {
-        _parent.forwardOn(event)
         switch event {
         case .next:
-            break
-        case .completed, .error:
+            _parent.forwardOn(event)
+        case .completed:
+            _parent._hasLatest = false
+            if _parent._stopped {
+                _parent.forwardOn(event)
+                _parent.dispose()
+            }
+        case .error:
+            _parent.forwardOn(event)
             _parent.dispose()
         }
     }

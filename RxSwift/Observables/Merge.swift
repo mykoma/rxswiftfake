@@ -113,7 +113,7 @@ fileprivate class MergeSink<SourceElement, SourceSequence: ObservableConvertible
     let _lock = RecursiveLock()
     let _sourceSubscription = SingleAssignmentDisposable()
     let _group = CompositeDisposable()
-    var _activeCount = 0
+    var _activeCount: Int = 0
     var _stopped = false
     
     func performMap(_ element: SourceElement) throws -> SourceSequence {
